@@ -2,41 +2,43 @@
 import clsx from 'clsx';
 import styles from './styles.module.css';
 import Spacer from "../Utilities/Spacer";
+import Translate, { translate } from '@docusaurus/Translate';
+
 
 const FeatureList = [
     {
-        title: 'Getting Started',
+        title: <Translate>Getting Started</Translate>,
         imageUrl: require('@site/static/img/homepage/ill-overview.png').default,
-        link: '/getting-started',
+        link: 'getting-started',
         description: (
             <>
-                For new and experienced creators.
+                <Translate>For new and experienced creators.</Translate>
             </>
         ),
     },
     {
-        title: 'Worlds',
+        title: <Translate>Worlds</Translate>,
         imageUrl: require('@site/static/img/homepage/ill-worlds.png').default,
-        link: '/worlds',
+        link: 'worlds',
         description: (
             <>
-                Build simple to complex experiences and hangouts.
+                <Translate>Build simple to complex experiences and hangouts.</Translate>
             </>
         ),
     },
     {
-        title: 'Avatars',
+        title: <Translate>Avatars</Translate>,
         imageUrl: require('@site/static/img/homepage/ill-avatars.png').default,
-        link: '/avatars',
+        link: 'avatars',
         description: (
             <>
-                Express yourself with a wide range of customization.
+                <Translate>Express yourself with a wide range of customization.</Translate>
             </>
         ),
     },
 ];
 
-function Feature({imageUrl, title, description, link}) {
+function Feature({ imageUrl, title, description, link }) {
     return (
         <div className={clsx(`col col--4 ${styles.feature}`)}>
             <div className="text--center">
@@ -48,9 +50,9 @@ function Feature({imageUrl, title, description, link}) {
                 <h3>{title}</h3>
                 <p className="text--left">{description}</p>
             </div>
-            <Spacer/>
+            <Spacer />
             <div>
-                <a href={link}><button className="button button--primary button--block">Learn more</button></a>
+                <a href={link}><button className="button button--primary button--block"><Translate>Learn more</Translate></button></a>
             </div>
         </div>
     );

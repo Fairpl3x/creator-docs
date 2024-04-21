@@ -1,0 +1,34 @@
+{
+  "title": {
+    "message": "VRChat Creation",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Logo VRChat",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Worlds": {
+    "message": "Mondes",
+    "description": "Navbar item with label Worlds"
+  },
+  "item.label.Avatars": {
+    "message": "Avatars",
+    "description": "Navbar item with label Avatars"
+  },
+  "item.label.Releases": {
+    "message": "Versions",
+    "description": "Navbar item with label Releases"
+  },
+  "item.label.UdonSharp": {
+    "message": "UdonSharp",
+    "description": "Navbar item with label UdonSharp"
+  },
+  "item.label.Creator Companion": {
+    "message": "Creator Companion",
+    "description": "Navbar item with label Creator Companion"
+  },
+  "item.label.ClientSim": {
+    "message": "ClientSim",
+    "description": "Navbar item with label ClientSim"
+  }
+}

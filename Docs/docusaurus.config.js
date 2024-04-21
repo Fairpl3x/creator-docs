@@ -31,9 +31,9 @@ const config = {
         docs: {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: ({versionDocsDirPath, docPath}) =>
-              `https://github.com/vrchat-community/creator-docs/edit/main/Docs/docs/${docPath}`,
-          showLastUpdateTime: true
+          editUrl: `https://github.com/vrchat-community/creator-docs/edit/main/Docs/`,
+          editLocalizedFiles: true,
+          showLastUpdateTime: true,
         },
         blog: {
           path: 'releases',
@@ -50,6 +50,11 @@ const config = {
       }),
     ],
   ],
+
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'fr'],
+  },
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -81,6 +86,7 @@ const config = {
           {to: 'https://udonsharp.docs.vrchat.com', label: 'UdonSharp', position: 'right'},
           {to: 'https://vcc.docs.vrchat.com', label: 'Creator Companion', position: 'right'},
           {to: 'https://clientsim.docs.vrchat.com', label: 'ClientSim', position: 'right'},
+          {type: 'localeDropdown', position: 'right'},
         ],
       },
       footer: {
@@ -97,9 +103,9 @@ const config = {
           {
             title: 'Tools',
             items: [
-              {to: 'https://udonsharp.docs.vrchat.com', label: 'UdonSharp'},
-              {to: 'https://vcc.docs.vrchat.com', label: 'Creator Companion'},
-              {to: 'https://clientsim.docs.vrchat.com', label: 'ClientSim'},
+              { to: 'https://udonsharp.docs.vrchat.com', label: 'UdonSharp' },
+              { to: 'https://vcc.docs.vrchat.com', label: 'Creator Companion' },
+              { to: 'https://clientsim.docs.vrchat.com', label: 'ClientSim' },
             ],
           },
           {

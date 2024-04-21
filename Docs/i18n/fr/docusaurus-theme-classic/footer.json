@@ -1,0 +1,54 @@
+{
+  "link.title.Docs": {
+    "message": "Documentations",
+    "description": "The title of the footer links column with title=Docs in the footer"
+  },
+  "link.title.Tools": {
+    "message": "Outils",
+    "description": "The title of the footer links column with title=Tools in the footer"
+  },
+  "link.title.Community": {
+    "message": "Communauté",
+    "description": "The title of the footer links column with title=Community in the footer"
+  },
+  "link.title.More": {
+    "message": "Plus",
+    "description": "The title of the footer links column with title=More in the footer"
+  },
+  "link.item.label.Worlds": {
+    "message": "Mondes",
+    "description": "The label of footer link with label=Worlds linking to worlds"
+  },
+  "link.item.label.Avatars": {
+    "message": "Avatars",
+    "description": "The label of footer link with label=Avatars linking to avatars"
+  },
+  "link.item.label.UdonSharp": {
+    "message": "UdonSharp",
+    "description": "The label of footer link with label=UdonSharp linking to https://udonsharp.docs.vrchat.com"
+  },
+  "link.item.label.Creator Companion": {
+    "message": "Creator Companion",
+    "description": "The label of footer link with label=Creator Companion linking to https://vcc.docs.vrchat.com"
+  },
+  "link.item.label.ClientSim": {
+    "message": "ClientSim",
+    "description": "The label of footer link with label=ClientSim linking to https://clientsim.docs.vrchat.com"
+  },
+  "link.item.label.Discord": {
+    "message": "Discord",
+    "description": "The label of footer link with label=Discord linking to https://discord.com/invite/vrchat"
+  },
+  "link.item.label.Twitter": {
+    "message": "Twitter",
+    "description": "The label of footer link with label=Twitter linking to https://twitter.com/vrchat"
+  },
+  "link.item.label.Releases": {
+    "message": "Versions",
+    "description": "The label of footer link with label=Releases linking to /releases"
+  },
+  "copyright": {
+    "message": "Copyright © 2023 VRChat Inc. Construit avec Docusaurus.",
+    "description": "The footer copyright"
+  }
+}

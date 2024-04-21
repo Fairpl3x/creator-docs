@@ -1,0 +1,78 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Configurer le SDK": {
+    "message": "Configurer le SDK",
+    "description": "The label for category Configurer le SDK in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Avatars": {
+    "message": "Avatars",
+    "description": "The label for category Avatars in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Avatar Dynamics": {
+    "message": "Avatar Dynamics",
+    "description": "The label for category Avatar Dynamics in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Mondes": {
+    "message": "Mondes",
+    "description": "The label for category Mondes in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Examples": {
+    "message": "Examples",
+    "description": "The label for category Examples in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Obstacle Course": {
+    "message": "Obstacle Course",
+    "description": "The label for category Obstacle Course in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Udon Example Scene": {
+    "message": "Udon Example Scene",
+    "description": "The label for category Udon Example Scene in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Udon": {
+    "message": "Udon",
+    "description": "The label for category Udon in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Udon Node Graph": {
+    "message": "Udon Node Graph",
+    "description": "The label for category Udon Node Graph in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Data Containers": {
+    "message": "Data Containers",
+    "description": "The label for category Data Containers in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Midi in Udon": {
+    "message": "Midi in Udon",
+    "description": "The label for category Midi in Udon in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Networking": {
+    "message": "Networking",
+    "description": "The label for category Networking in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Player API": {
+    "message": "Player API",
+    "description": "The label for category Player API in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Video Players": {
+    "message": "Video Players",
+    "description": "The label for category Video Players in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.VRCGraphics": {
+    "message": "VRCGraphics",
+    "description": "The label for category VRCGraphics in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Scene Components": {
+    "message": "Scene Components",
+    "description": "The label for category Scene Components in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Platforms": {
+    "message": "Platforms",
+    "description": "The label for category Platforms in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Android": {
+    "message": "Android",
+    "description": "The label for category Android in sidebar tutorialSidebar"
+  }
+}

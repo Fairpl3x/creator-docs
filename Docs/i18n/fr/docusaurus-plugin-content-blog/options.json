@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "VRChat SDK Releases",
+    "description": "The title for the blog used in SEO"
+  },
+  "description": {
+    "message": "The latest VRChat SDK releases and patch notes.",
+    "description": "The description for the blog used in SEO"
+  },
+  "sidebar.title": {
+    "message": "History",
+    "description": "The label for the left sidebar"
+  }
+}
