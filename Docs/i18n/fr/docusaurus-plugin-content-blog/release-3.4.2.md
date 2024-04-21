@@ -1,17 +1,17 @@
 ---
 slug: release-3-4-2
 date: 2023-12-05
-title: Release 3.4.2
+title: Version 3.4.2
 authors: [momo]
 tags: [release]
 draft: false
 ---
-## Summary
+## Résumé
 
-This update fixes an issue where legacy folders were not removed as part of migrating a project which used the old Assets-based SDK.
+Cette mise à jour règle un problème où les anciens dossiers n'étaient pas enlevés lors de la migration d'un projet qui utilisait les Assets basés sur l'ancien SDK.
 
 <!--truncate-->
 
-## Changes
+## Changements
 
-* Adds all the 'legacyFolders' from the UdonSharp and ClientSim packages into the Worlds package.
+* Ajoute tous les 'legacyFolders' des packages d'UdonSharp et de ClientSim dans le package Worlds.
