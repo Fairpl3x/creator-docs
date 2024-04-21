@@ -7,159 +7,160 @@ updatedAt: "2023-04-03T18:46:53.072Z"
 sidebar_position: 0
 ---
 
-VRChat allows you to create and upload custom avatars!
+VRChat vous permet de créer et d'envoyer des avatars personnalisés!
 
-# Creating Avatars
+# Créer des Avatars
 
-To get started, check out [Creating your first avatar](/avatars/creating-your-first-avatar).
+Pour commencer, consultez [Créer votre premier avatar](/avatars/creating-your-first-avatar).
 
-There's a whole 'Avatars' category on the sidebar to check out. Here are some of the more impactful and important pages:
+Il y a toute une catégorie "Avatars" dans la barre latérale à explorer. Voici quelques-unes des pages les plus importantes et impactantes:
 
-- [Rig Requirements](/avatars/rig-requirements) explains how to set up your custom 3D model's hierarchy for VRChat.
-- [Avatar Performance Ranking System](/avatars/avatar-performance-ranking-system) explains how some avatars achieve an 'Excellent' performance, and others 'Very Poor'.
-- [Avatar Optimization Tips](/avatars/avatar-optimizing-tips) - Now that you know _why_, check out this page to learn how to get all your frames back.
-- Continue reading this page to learn more about important Avatars 3.0 SDK concepts.
+- [Exigences de l'Armature](/avatars/rig-requirements) explique comment configurer la hiérarchie de votre modèle 3D pour VRChat.
+- Le [Système de Classement des Performances des Avatars](/avatars/avatar-performance-ranking-system) explique comment certains avatars obtiennent un niveau de performance "Excellent", et d'autres "Very Poor".
+- [Conseils d'Optimisation des Avatars](/avatars/avatar-optimizing-tips) - Maintenant que vous savez `pourquoi`, consultez cette page pour apprendre comment récupérer tous vos FPS.
+- Continuez à lire cette page pour en savoir plus sur les concepts importants du SDK Avatars 3.0.
 
-## What is Avatars 3.0?
+## C'est quoi Avatars 3.0?
 
-**Avatars 3.0** is our name for all the features available for avatars in VRChat. AV3's features are focused on improving expression, performance, and the abilities of avatars in VRChat.
+**Avatars 3.0** est notre nom pour toutes les fonctionnalités disponibles pour les avatars dans VRChat. Les fonctionnalités d'AV3 sont axées sur l'amélioration des expression, des performances et des capacités des avatars dans VRChat.
 
-Avatars 3.0 is heavily integrated with the [Action Menu](https://docs.vrchat.com/docs/action-menu) for controlling and interacting with the avatar you're wearing. It's probably best if you hop in and try out the Action Menu before building an AV3 avatar!
+Avatars 3.0 est lourdement intégré avec le [Menu d'Action](https://docs.vrchat.com/docs/action-menu) pour contrôler et interagir avec l'avatar que vous portez. Il est probablement préférable de jouer et d'essayer le Menu d'Action avant de créer un avatar AV3!
 
-## Prerequisites
+## Prérequis
 
-- [Install & set up the VRChat Avatars SDK](/sdk)
-- [Create your first avatar](/avatars/creating-your-first-avatar)
+- [Installer et configurer le SDK Avatars VRChat](/sdk)
+- [Créer votre premier avatar](/avatars/creating-your-first-avatar)
 
-## Understanding the Concepts
+## Comprendre les Concepts
 
-In order to understand and use Avatars 3.0, you need to know a few concepts. These concepts will help you understand the construction of avatars, how best to assemble them, and the intended use of various systems.
+Pour comprendre et utiliser Avatars 3.0, vous devez connaître quelques concepts. Ces concepts vous aideront à comprendre la construction des avatars, comment les assembler au mieux, et l'utilisation prévue de différents systèmes.
 
-### Unity Systems
+### Systèmes Unity
 
-This document is written with the assumption that you know a bit about [Unity Animators](https://docs.unity3d.com/2019.4/Documentation/Manual/class-AnimatorController.html). In particular, you should ensure you have basic working knowledge of:
+Ce document est rédigé en supposant que vous avez quelques connaissances sur les [Animators Unity](https://docs.unity3d.com/2019.4/Documentation/Manual/class-AnimatorController.html). En particulier, vous devez vous assurer d'avoir une connaissance de base du fonctionnement pour:
 
-- Animators and animations
-- Animator layers, layer weights, and blending
-- States and transitions
-- Animator parameters
-- State behaviors
-- Avatar masks
+- Les Animateurs et les animations
+- Les Layers d'Animateur, les layer weights, et les blending
+- Les States et les transitions
+- Les paramètres de l'Animateur
+- Les State behaviors
+- Les masques d'Avatar
 
-It can also help to know about things like:
+Il peut également être utile de connaître des choses comme:
 
-- State exit time
-- Loop Time for animations
-- (Advanced) Time Sync between layers
-- (Advanced) Blend trees
+- Le temps de sortie d'un State
+- Le temps de boucle pour les animations
+- (Avancé) La synchronisation du temps entre les Layers
+- (Avancé) Les Blend trees
 
-### Basics
+### Bases
 
-With Avatars 3.0, you can create a basic avatar with simulated eye movement and visemes very quickly. 
+Avec Avatars 3.0, vous pouvez créer rapidement un avatar de base avec un mouvement simulé des yeux et des visèmes.
 
-1. Import your avatar, rig as humanoid. Set up your materials, etc.
-2. Add the Avatar Descriptor component.
-3. Define the eye bones, if you want simulated eye movement.
-4. Define the viseme type, if you want visemes. Assign the jaw-flap bone in the Rigging Configuration Screen, or define your visemes by blendshapes. Same as Avatar 2.0.
-5. Set your viewpoint.
-6. Build and upload!
+1. Importez votre avatar, riggé en tant qu'humanoïde. Configurez vos matériaux, etc.
+2. Ajoutez le composant Avatar Descriptor.
+3. Définissez les os des yeux, si vous souhaitez un mouvement simulé des yeux.
+4. Définissez le type de visèmes, si vous souhaitez des visèmes. Attribuez l'os de la mâchoire dans l'écran de configuration du rig, ou définissez vos visèmes par blendshapes. Comme dans Avatar 2.0.
+5. Configurez votre point de vue.
+6. Générez et envoyez!
 
-If you are making a non-humanoid avatar please read the Generic Avatars section below.
+Si vous créez un avatar non-humanoïde, veuillez lire la section sur les avatars génériques ci-dessous.
 
-You're done! This will create a basic avatar with default gestures and actions. There's some built-in things you can take advantage of, so even if someone slaps in an avatar with blendshapes/bones named a certain way, you'll get some basic Avatar 3.0 features.
+Vous avez terminé! Cela créera un avatar basique avec des gestures et des actions par défaut. Il y a quelques fonctionnalités intégrées que vous pouvez exploiter, donc même si quelqu'un intègre un avatar avec des blendshapes/os nommés d'une certaine manière, vous obtiendrez quelques fonctionnalités de base d'Avatar 3.0.
 
-However, even with these basic upgraded systems, there are some new features.
+Cependant, même avec ces systèmes de base améliorés, il existe de nouvelles fonctionnalités.
 
-### Local Avatar Testing
+### Test Local d'un Avatar
 
-Ever wanted to iterate and test an avatar without uploading it? Well, with Avatars 3.0, now you can!
+Avez-vous déjà voulu itérer et tester un avatar sans avoir à le téléverser? Eh bien, avec les Avatars 3.0, c'est désormais possible!
 
-In the "Builder" tab of VRChat SDK control panel, you can now select "Build & Test" at "Offline Testing" section. When you click this, your avatar will be built, and then copied into a folder.
+Dans l'onglet `Builder` du panneau de contrôle du SDK VRChat, vous pouvez maintenant sélectionner `Build & Test` dans la section `Offline Testing`. Lorsque vous cliquez dessus, votre avatar sera généré, puis copié dans un dossier.
 
-When you launch VRChat, you'll be able to access this avatar locally by looking in the "Other" section of the Avatar menu! Only you will be able to see it, but you can make changes to your avatar, click "Build & Test" again, and after a short build, your avatar will be updated. Simply re-select the avatar in your menu and click "Change" again, and you'll swap into the new testing avatar.
+Lorsque vous lancez VRChat, vous pourrez accéder à cet avatar localement en regardant dans la section `Other` du menu des Avatars! Uniquement vous serez en mesure de le voir, mais vous pouvez apporter des modifications à votre avatar, cliquer à nouveau sur `Build & Test`, et après une courte génération, votre avatar sera mis à jour. Il vous suffit de re-sélectionner l'avatar dans votre menu et de cliquer à nouveau sur `Change`, et vous passerez sur la nouvelle version de l'avatar.
 
-This avatar is _only_ visible to you! To everyone else, you'll look like you're wearing the last avatar you were wearing before swapping into the local test avatar. For our AV3 testers, this made iteration a TON faster. We hope you like it!
+Cet avatar est _uniquement_ visible par vous! Pour les autres, vous aurez l'apparence du dernier avatar que vous portiez avant de passer à l'avatar de test local. Pour nos testeurs d'AV3, cela a considérablement accéléré le processus d'itération. On espère que vous aimez ça!
 
-To delete the copied local test avatar, go to "Content Manager" tab of the VRChat SDK control panel. You will see your avatar in "Test Avatars" section at the bottom. Click "Delete" and it will disappear from "Other" section of the Avatar menu when you reopen it.
+Pour supprimer l'avatar de test local copié, allez dans l'onglet `Content Manager` du panneau de contrôle du SDK VRChat. Vous verrez votre avatar dans la section `Test Avatars` en bas. Cliquez sur `Delete` et il disparaîtra de la section `Other` du menu des avatars lorsque vous le rouvrirez.
 
-### Simulated Eye Movement
+### Mouvement des Yeux Simulé
 
-Simulated eye movement is where your eyes will move around, looking at things around you. This isn't _eye tracking_-- as in, we don't have a way for you to input data from eye tracking devices-- but it is a pretty good way of making your avatar look more "alive".
+Le mouvement des yeux simulé consiste à faire bouger vos yeux en regardant les choses autour de vous. Ceci n'est pas du *eye tracking* à proprement parler, c'est-à-dire que nous n'avons pas de moyen pour vous d'entrer des données à partir de dispositifs de suivi oculaire, mais c'est une manière assez efficace de rendre votre avatar plus "vivant".
 
-You can preview your setup in the editor and adjust how your avatar's eyes look in a combination of states, which are used to determine how your eye bones are set up.
+Vous pouvez prévisualiser votre configuration dans l'éditeur et ajuster l'apparence des yeux de votre avatar dans une combinaison d'états, qui sont utilisés pour déterminer comment vos os oculaires sont configurés.
 
-Blinking can be handled via blendshapes or bones. Blendshapes are the usual method, but we included bones as well to allow for more setups.
+Le clignement des yeux peut être géré via des Blendshapes ou des os. Les Blendshapes sont la méthode habituelle, mais nous avons également inclus des os pour permettre davantage de configurations.
 
-Blinking blendshapes are defined by three blendshapes, described below:
+Les Blendshapes pour le clignement des yeux sont définis par trois Blendshapes, décrits ci-dessous :
+Le clignement des yeux sont définis par trois Blendshapes, décrites ci-dessous:
 
-- Blink - Both eyes blinking
-- Looking Up - Blendshape used when looking up-- use this to tweak eye/iris/lid/eyebrow positioning
-- Looking Down - Blendshape used when looking down, use this similarly to Looking Up
+- `Blink` - Les deux yeux clignent
+- `Looking Up` - Blendshape utilisé lorsqu'on regarde vers le haut, utilisez celle-ci pour ajuster la position de l'œil/iris/paupière/sourcil
+- `Looking Down` - Blendshape utilisé lorsqu'on regarde vers le bas, utilisez celle-ci de manière similaire à LookUp
 
-You can set these Blendshapes to `-none-` if you don't want to use them.
+Vous pouvez les régler ces Blendshapes sur `-none-` si vous ne souhaitez pas les utiliser.
 
-In addition, you'll notice two sliders-- one goes from Calm to Excited, and the other goes from Shy to Confident. Calm / Excited affects how often you blink. Shy / Confident affects how often you look at other players, and how long your gaze remains on other player's faces until you look away.
+De plus, vous remarquerez deux curseurs : l'un va de `Calm` (Calme) à `Excited` (Excité), et l'autre va de `Shy` (Timide) à `Confident` (Confiant). Calm / Excited affecte la fréquence à laquelle vous clignez des yeux. Shy / Confident affecte la fréquence à laquelle vous regardez les autres joueurs et la durée pendant laquelle votre regard reste sur le visage des autres joueurs avant de détourner le regard.
 
-You'll learn more about this when we talk about state behaviors, but you can set states in your animator to **disable eye animations** when you reach that state. You can set it up such that you don't have to worry about your blendshapes being overdriven because your "happy" mood closes your eyes, and your blinking is still firing off. 
+Vous en apprendrez davantage à ce sujet lorsque nous parlerons des state behaviors, mais vous pouvez définir des états dans votre animator pour **désactiver les animations des yeux** lorsque vous atteignez cet état. Vous pouvez le configurer de telle manière que vous n'ayez pas à vous soucier du surmenage de vos blendshapes parce que votre humeur "heureuse" ferme vos yeux, et votre clignement des yeux continue de s'activer.
 
-### Blendshape / Bone-based Visemes
+### Blendshapes / Visèmes basés sur Os
 
-If you just want to stick with the standard jaw-flap bone or blendshape-based visemes, we've got you covered. Both are still present and work just fine.
+Si vous souhaitez simplement utiliser les visèmes standard basés sur les os jaw-flap ou les blendshapes, nous avons ce qu'il vous faut. Les deux sont toujours présents et fonctionnent très bien.
 
-In addition, you can now configure the angle of the jaw-flap bone viseme for some additional customization!
+De plus, vous pouvez désormais configurer l'angle du visème basé sur l'os jaw-flap pour une personnalisation supplémentaire!
 
-However, in Avatars 3.0, you can also access an Animator Parameter which indicates which viseme should be currently playing! This means if you can animate it, **you can use it in a viseme.** No more trickery for 2D mouths, robots, whatever-- you can just animate whatever you like for your visemes.
+Cependant, avec Avatars 3.0, vous pouvez également accéder à un paramètre de l'Animator indiquant quel visème doit être actuellement en cours de lecture! Cela signifie que si vous pouvez l'animer, **vous pouvez l'utiliser dans un visème.** Plus besoin de subterfuges pour les bouches 2D, les robots, ou qu'importe-- vous pouvez simplement animer ce que vous voulez pour vos visèmes.
 
-The `Viseme` animator parameter is updated in all viseme modes.
+Le paramètre de l'Animator `Viseme` est mis à jour dans tous les modes de visème.
 
-### Proxy Animations
+### Animations Proxy
 
-You'll probably notice that the SDK includes a bunch of animations named `proxy_animationName`. These animations are "placeholders" for a variety of default VRChat animations. If you use an animation that starts with `proxy_`, VRChat will attempt to replace it with a built-in animation. This can be done in any playable layer.
+Vous remarquerez probablement que le SDK inclut un ensemble d'animations nommées `proxy_ nom de l'animation`. Ces animations sont des "placeholders" pour diverses animations par défaut de VRChat. Si vous utilisez une animation qui commence par `proxy_`, VRChat tentera de la remplacer par une animation intégrée. Cela peut être fait dans n'importe quelle layer lisible.
 
-Although we will not replace an animation with a `proxy_` prefix if the suffix does not match one of our built-in animations, it is probably best practice to avoid naming any of your animations with the prefix `proxy_`.
+Bien que nous ne remplacerons pas une animation avec le préfixe `proxy_` si le suffixe ne correspond pas à l'une de nos animations intégrées, il est probablement préférable de ne pas nommer vos animations avec le préfixe `proxy_`.
 
 ### Use Auto Footstep
 
-This is an option in the AV3 Avatar Descriptor. It is on by default.
+Il s'agit d'une option dans le Descripteur d'Avatar AV3. Elle est activée par défaut.
 
-**"Use Auto Footstep"** only applies to 3-point or 4-point tracking. Turning it off means you're disabling the procedural lower body animation for room-scale movement. This procedural animation is what plays when you move around in room-space while in 3 or 4-point tracking.
+**"Use Auto Footstep"** s'applique uniquement aux systèmes de tracking à 3 points ou 4 points. Désactiver cette option signifie que vous désactivez l'animation procédurale du bas du corps pour les déplacements Roomscale. Cette animation procédurale est celle qui se déclenche lorsque vous vous déplacez en Roomscale tout en utilisant un tracking à 3 ou 4 points.
 
-Leaving Auto Footsteps on (which is the default state) will still allow you to enable/disable tracking via the Tracking Control state behavior.
+Laisser l'option `Auto Footsteps` activée (ce qui est l'état par défaut) vous permettra toujours d'activer/désactiver le suivi depuis le State Behavior "Tracking Control".
 
-If Auto Footsteps is off, enabling/disabling tracking on your legs and hips won't do anything, and you're relying on your animations to drive your lower body at all times.
+Si l'option `Auto Footsteps` est désactivée, activer/désactiver le suivi au niveau des jambes et des hanches n'aura aucun effet, et vous devrez compter sur vos animations pour contrôler votre bas du corps en permanence.
 
 ### Force Locomotion Animations
 
-This is an option in the AV3 Avatar Descriptor. It is on by default.
+Il s'agit d'une option dans le Descripteur d'Avatar AV3. Elle est activée par défaut.
 
-**"Force Locomotion Animations"** is on by default. It only applies to 6-point tracking (Full-Body Tracking). When "Locomotion Animations" is on, locomoting in FBT (as in, moving your joysticks) will play a walking/running animation as determined by your Base playable layer.
+**"Force Locomotion Animations"** est activé par défaut. Il s'applique uniquement au suivi à 6 points (Full-Body Tracking). Lorsque "Force Locomotion Animations" est activé, le déplacement en FBT (c'est-à-dire, le déplacement avec les joysticks) déclenchera une animation de marche/course déterminée par votre Base playable layer.
 
-When "Locomotion Animations" is off, locomoting in FBT will NOT play the walking/running animation. This is useful if you wish to "mime" your walking with your full-body tracking movement. **If you are turning off "Locomotion Animations", do not use the default Base and Additive layers.** You're expected to make your own!
+Lorsque "Force Locomotion Animations" est désactivé, le déplacement en FBT ne déclenchera PAS l'animation de marche/course. Ceci est utile si vous souhaitez "imiter" votre marche avec votre mouvement en full-body tracking. **Si vous désactivez "Force Locomotion Animations", n'utilisez pas les layers Base et Additive par défaut.** Vous êtes censé les créer vous-même!
 
-### Write Defaults on States
+### Write Defaults dans les States
 
-[Write Defaults](https://docs.unity3d.com/2019.4/Documentation/Manual/class-State.html) is an option available on states in Animators in Unity. 
+[Write Defaults](https://docs.unity3d.com/2019.4/Documentation/Manual/class-State.html) est une option disponible sur les states dans les Animators d'Unity.
 
-Write Defaults "on" will write back the default values of **all animated properties** (_on a Controller-wide basis!_) that are not animated in that particular state. This can cause some very strange interactions if you don't plan for it.
+Write Default sur "ON" permet d'écrire les valeurs par défaut de **toutes les propriétés animées** (_au niveau du Controller dans son ensemble!_) qui ne sont pas animées dans ce state en particulier. Cela peut provoquer des interactions très étranges si vous n'y prenez pas garde.
 
-This feature was added by Unity during the migration to version 5.0. This was done so pre-existing assets and project that relied on this write-all-default-properties behavior didn't break. 
+Cette fonctionnalité a été ajoutée par Unity lors de la migration vers la version 5.0. Cela a été fait pour que les assets et les projets existants qui dépendaient de la propriété "Write-all-default" puissent continuer de fonctionner.
 
-Normally, when you're working with other game developers on a project, you agree on a standard. In VRChat, we're _all_ game developers, so we must set the standard here. 
+Normalement, lorsque vous travaillez avec d'autres développeurs sur un projet de jeu-vidéo, vous convenez d'une norme. Dans VRChat, nous sommes _tous_ des développeurs, alors on va devoir définir un standard.
 
-VRChat does not use "Write Defaults" in our built-in and example animators. This means that only the actual properties that are in animations get played by any one animation node. We recommend that creators also follow this workflow, as it is easier to keep track of what properties will be animated through any specific layer, and it also lines up with the intended use of Unity as a whole.
+VRChat n'utilise pas "Write Defaults" dans nos animateurs intégrés et exemples. Cela signifie que seules les propriétés réellement présentes dans les animations sont jouées par un nœud d'animation donné. Nous recommandons que les créateurs suivent également ce workflow, car il est plus facile de suivre les propriétés qui seront animées par le biais de n'importe quelle couche spécifique, et cela correspond également à l'utilisation prévue d'Unity dans son ensemble.
 
-The Write Defaults value defaults to **on** when you create a new node, so creators must be aware they will have to uncheck this value. If you want to use Write Defaults, you will have to keep track of all the possible properties that may be written by a node with this enabled.
+La valeur de Write Defaults est activée par défaut lors de la création d'un nouveau nœud, les créateurs doivent être conscients qu'ils devront décocher cette option. Si vous souhaitez utiliser Write Defaults, vous devrez surveiller toutes les propriétés possibles qui peuvent être écrites par un nœud avec cette option activée.
 
-**We recommend keeping Write Defaults off and explicitly animating any parameter that needs to be set by the animation.** Note that this may require adding "reset" animations or adding properties to the animation to "initialize" transforms in a specific orientation.
+**Nous recommandons de laisser Write Defaults désactivé et d'animer explicitement tout paramètre qui doit être défini par l'animation.** Notez que cela peut nécessiter l'ajout d'animations de "réinitialisation" ou de propriétés à l'animation pour "initialiser" les transformations dans une orientation spécifique.
 
-All that being said, if you get into more advanced use cases and setups, it may be advantageous to use Write Defaults On.
+Cela étant dit, dans des cas d'utilisation et des configurations plus avancés, il peut être avantageux d'utiliser Write Defaults On.
 
-### Generic Avatars
+### Avatars Générique
 
-Avatar 3.0 also supports non-humanoid generic avatars. If you want access to similar features that AV3 Humanoids have access to, you'll need to follow a few guidelines:
+Avatar 3.0 prend également en charge les avatars génériques non-humanoïdes. Si vous souhaitez accéder aux fonctionnalités similaires à celles auxquelles ont accès les AV3 humanoïdes, vous devrez suivre quelques directives :
 
-- Import your generic model as an FBX and assign it the 'Generic' rig type, so that an "avatar" object is created
-- Make sure this avatar object is referenced in the avatar field of the Animator component at the root of your avatar (the same Game Object as the avatar descriptor).
-- Leave the animator controller blank (it will be stripped at runtime) and use the Playable Layers to define your custom animation controllers. Generic avatars have 3 Playable layers: Base, Action, and FX, as the other layers are specific to Humanoids.
+- Importez votre modèle générique sous forme de fichier FBX et attribuez-lui le type d'armature "Generic", de manière à ce qu'un objet "avatar" soit créé.
+- Assurez-vous que cet objet avatar est référencé dans le champ avatar du composant Animator situé à la racine de votre avatar (le même GameObject que le descripteur d'avatar).
+- Laissez l'Animator Controller vide (il sera supprimé à l'exécution) et utilisez les couches lisibles pour définir vos contrôleurs d'animation personnalisés. Les avatars génériques disposent de 3 couches lisibles : Base, Action et FX, car les autres couches sont spécifiques aux avatars humains.
 
-If you do not follow these steps, your generic avatar will not have access to many Avatars 3.0 features such as Expression Parameters and State Behaviours. If you are fine with that, you can add an animation controller directly into the root animator, leaving the avatar field blank. This method could be useful if you are just building a hierarchy of static objects in Unity and want a simple animation.
+Si vous ne suivez pas ces étapes, votre avatar générique n'aura pas accès à de nombreuses fonctionnalités d'Avatars 3.0, telles que les Paramètres d'Expression et les State Behaviours. Si cela ne vous dérange pas, vous pouvez ajouter un contrôleur d'animation directement à la racine de l'animator, en laissant le champ avatar vide. Cette méthode peut être utile si vous construisez simplement une hiérarchie d'objets statiques dans Unity et que vous souhaitez une animation simple.

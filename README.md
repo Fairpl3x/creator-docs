@@ -17,4 +17,4 @@ More language can be added if enough people are interested to work on specific t
 - This is the base made by VRChat, original and unmodified. It will be used as a reference for other translations in this repo. **Don't suggest edits** on this one here. If you would like to suggest changes in the official Creator Doc, please use [VRChat Repo](https://github.com/vrchat-community/creator-docs) instead.
 
 ## In Progress:
-### [French](https://fairplexvr.github.io/creator-docs-i18n/fr/) (3.81% Completed)
+### [French](https://fairplexvr.github.io/creator-docs-i18n/fr/) (4.76% Completed)
