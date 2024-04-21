@@ -1,28 +1,28 @@
 ---
-title: "Welcome!"
+title: "Bienvenue!"
 slug: "getting-started"
 sidebar_position: -99
 ---
-Your VRChat Creator Journey begins here! 
+Votre voyage en tant que créateur VRChat commence ici!
 
-Whether you're a seasoned developer or a curious enthusiast, the VRChat SDK provides you with the tools and resources to unleash your creativity and bring your imagination to life.
+Que vous soyez un développeur curieux ou chevronné, le SDK de VRChat vous offre les outils et les ressources pour libérer votre créativité et donner vie à votre imagination.
 
-## Quickstart
+## Démarrage rapide
 
 <div class="video-container">
     <iframe src="https://www.youtube.com/embed/0u1g0TYoJsU" title="VRChat Creator Companion" frameborder="0" allow="encrypted-media; gyroscope; web-share" allowfullscreen></iframe>
 </div>
 
-1. Download & Install [the Creator Companion](https://vrchat.com/download/vcc).
-2. If Unity is not installed, the Creator Companion will help you download Unity Hub,  install Unity 2019.4.31f1, and [create a Unity Account](https://id.unity.com/account/new).
-3. Use the Creator Companion to create a new Worlds or Avatar project, and open it with Unity.
-4. Build your world or avatar in Unity, and test it in VRChat using the SDK Control Panel.
-5. Once ready, use the Control Panel to publish your World or Avatar to VRChat!
+1. Téléchargez & Installez le [Creator Companion](https://vrchat.com/download/vcc).
+2. Si Unity n'est pas installé, le Creator Companion vous aidera à télécharger le Hub Unity, à installer Unity 2019.4.31f1, et à [créer un compte Unity](https://id.unity.com/account/new).
+3. Utilisez le Creator Companion pour créer un nouveau projet de Mondes ou d'Avatars, et ouvrez-le avec Unity.
+4. Construisez votre monde ou votre avatar dans Unity, et testez le dans VRChat en utilisant le Panneau de Contrôle du SDK.
+5. Une fois prêt, utilisez le Panneau de Contrôle du SDK pour publier votre Monde ou votre Avatar sur VRchat!
 
-## World Creation
+## Création de Monde
 
-To make a VRChat world, you construct a scene in Unity using typical 3D models, materials and lighting. You can add interactivity with [Udon](/worlds/udon), our custom scripting system. Udon can be built with the visual [Udon Graph](/worlds/udon) or by writing C#-like code using [UdonSharp](https://udonsharp.docs.vrchat.com). You can use our [Networking](/worlds/udon/networking) system to synchronize experiences between players.
+Pour créer un monde VRChat, vous construisez une scène dans Unity en utilisant des modèles 3D classiques, des matériaux et de l'éclairage. Vous pouvez ajouter de l'interactivité avec [Udon](/worlds/udon), notre système de script personnalisé. Udon peut être créé en utilisant [Udon Graph](/worlds/udon) visuel ou en écrivant du code semblable au C# en utilisant [UdonSharp](https://udonsharp.docs.vrchat.com). Vous pouvez utiliser notre système [Réseau](/worlds/udon/networking) pour synchroniser des expériences entre les joueurs.
 
-## Avatar Creation
+## Création d'Avatar
 
-To make a VRChat avatar, you must first create or find a 3D character, then ensure that it is [rigged](/avatars/creating-your-first-avatar#rigging-your-avatar) to work with VRChat. You can then [import your rigged model](/avatars/creating-your-first-avatar#importing-your-avatar) into Unity and add [Expressions and Controls](/avatars/expression-menu-and-controls), [Avatar Dynamics](/avatars/avatar-dynamics) and much more. 
+Pour créer un avatar VRChat, vous devez d'abord créer ou trouver un personnage 3D, puis vous assurer qu'il est [articulé](/avatars/creating-your-first-avatar#rigging-your-avatar) pour fonctionner avec VRChat. Ensuite, vous pouvez [importer votre modèle articulé](/avatars/creating-your-first-avatar#importing-your-avatar) dans Unity et y ajouter des [Expressions et Contrôles](/avatars/expression-menu-and-controls), de l'[Avatar Dynamics](/avatars/avatar-dynamics) et bien plus encore.
