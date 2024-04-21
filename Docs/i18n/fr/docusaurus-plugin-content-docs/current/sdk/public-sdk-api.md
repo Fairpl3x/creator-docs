@@ -10,12 +10,22 @@ Le SDK de VRChat fournit un ensemble d'interfaces et de méthodes que vous pouve
 
 Vous pouvez trouver le dossier **Public SDK API** dans les deux SDK :
 
-- Packages > com.vrchat.worlds > Editor > VRCSDK > SDK3 > Public SDK API
-- Packages > com.vrchat.avatars > Editor > VRCSDK > SDK3A > Public SDK API
+- Pour les mondes: Packages/VRChat SDK - Worlds/Editor/VRCSDK/SDK3/Public SDK API
+- Pour les avatars: Packages/VRChat SDK - Avatars/Editor/VRCSDK/SDK3A/Public SDK API
 
-Cependant, la plupart des événements et méthodes sont partagés entre les SDK de mondes et d'avatars et sont définis dans:
+Cependant, la plupart des événements et méthodes sont partagés entre les SDK de mondes et d'avatars et sont définis dans **Base SDK Package**: `Packages/VRChat SDK - Base > Editor/VRCSDK/Dependencies/VRChat/Public SDK API`.
 
-- Packages > com.vrchat.base
+D'autres méthodes marquées `[PublicAPI]` font également partie de l'API publique du SDK. Par exemple, "Packages/VRChat SDK - Base/Editor/VRCSDK/Dependencies/VRChat/API/VRCApi.cs" pour mettre à jour la description de contenus.
+
+:::note
+
+Ces types sont dans des définitions d'assembly qui sont automatiquement référencées. Si vous écrivez du code dans votre propre projet, les types seront généralement disponibles par défaut. Si vous écrivez un package redistribuable et avez votre propre définition d'assembly, vous devrez ajouter les références d'assembly appropriées :
+
+Pour les avatars : `VRC.SDK3A.Editor`  
+Pour les mondes : `VRC.SDK3.Editor`  
+Pour les deux : `VRC.SDKBase.Editor`
+
+:::
 
 ## Quest-ce qui est disponible?
 

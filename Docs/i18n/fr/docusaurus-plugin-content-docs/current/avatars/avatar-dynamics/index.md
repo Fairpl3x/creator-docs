@@ -11,4 +11,4 @@ Les deux principales fonctionnalités d'Avatar Dynamics sont les [PhysBones](/av
 
 Ces fonctionnalités sont gouvernée par le système de [Permissions et paramètres d'interaction des avatars](https://docs.vrchat.com/docs/permissions-and-settings), qui vous donne un contrôle total et complet sur qui peut interagir avec vous.
 
-Le SDK3 pour avatars contient un exemple d'avatar dans `Packages > VRChat SDK - Avatars > Samples > Dynamics > Robot Avatar` utile pour essayer d'implémenter des systèmes Avatar Dynamics.
+Le SDK3 pour avatars contient un exemple d'avatar dans `Packages\VRChat SDK\Avatars\Samples\Dynamics\Robot Avatar` utile pour essayer d'implémenter des systèmes Avatar Dynamics.

@@ -4,7 +4,7 @@ PhysBones is a set of components that lets you add secondary motion to avatars, 
 
 PhysBones is a replacement for Dynamic Bones. While both systems share a lot of concepts, there are some major differences with PhysBones, so not all avatars may directly translate over to VRChat’s system.
 
-An example of how to use Avatar Dynamics can be found in the SDK under `VRCSDK\Examples3\Dynamics\Robot Avatar`.
+An example of how to use Avatar Dynamics can be found in the SDK under `Packages > VRChat SDK - Avatars > Samples > Dynamics > Robot Avatar`.
 
 ## VRCPhysBone
 
