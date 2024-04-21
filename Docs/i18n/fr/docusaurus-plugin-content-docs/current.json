@@ -78,5 +78,25 @@
   "sidebar.tutorialSidebar.category.Gérer Unity": {
     "message": "Gérer Unity",
     "description": "The label for category Gérer Unity in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Allowed Avatar Components": {
+    "message": "Allowed Avatar Components",
+    "description": "The label for category Allowed Avatar Components in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Creator Economy": {
+    "message": "Creator Economy",
+    "description": "The label for category Creator Economy in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Products": {
+    "message": "Products",
+    "description": "The label for category Products in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Creator Economy SDK": {
+    "message": "Creator Economy SDK",
+    "description": "The label for category Creator Economy SDK in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Example Prefabs": {
+    "message": "Example Prefabs",
+    "description": "The label for category Example Prefabs in sidebar tutorialSidebar"
   }
 }

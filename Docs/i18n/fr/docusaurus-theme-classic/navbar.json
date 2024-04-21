@@ -30,5 +30,9 @@
   "item.label.ClientSim": {
     "message": "ClientSim",
     "description": "Navbar item with label ClientSim"
+  },
+  "item.label.Creator Economy": {
+    "message": "Creator Economy",
+    "description": "Navbar item with label Creator Economy"
   }
 }

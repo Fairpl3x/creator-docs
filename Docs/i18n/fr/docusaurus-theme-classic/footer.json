@@ -50,5 +50,9 @@
   "copyright": {
     "message": "Copyright © 2023 VRChat Inc. Construit avec Docusaurus.",
     "description": "The footer copyright"
+  },
+  "link.item.label.Creator Economy": {
+    "message": "Creator Economy",
+    "description": "The label of footer link with label=Creator Economy linking to economy"
   }
 }
