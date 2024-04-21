@@ -3,10 +3,6 @@
     "message": "Next",
     "description": "The label for version current"
   },
-  "sidebar.tutorialSidebar.category.Configurer le SDK": {
-    "message": "Configurer le SDK",
-    "description": "The label for category Configurer le SDK in sidebar tutorialSidebar"
-  },
   "sidebar.tutorialSidebar.category.Avatars": {
     "message": "Avatars",
     "description": "The label for category Avatars in sidebar tutorialSidebar"
@@ -75,8 +71,12 @@
     "message": "Android",
     "description": "The label for category Android in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.Managing Unity": {
-    "message": "Managing Unity",
-    "description": "The label for category Managing Unity in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.Démarrage": {
+    "message": "Démarrage",
+    "description": "The label for category Démarrage in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Gérer Unity": {
+    "message": "Gérer Unity",
+    "description": "The label for category Gérer Unity in sidebar tutorialSidebar"
   }
 }
