@@ -1,12 +1,12 @@
 ---
 slug: release-3-4-0
 date: 2023-10-04
-title: Release 3.4.0
+title: Version 3.4.0
 authors: [momo]
 tags: [release]
 draft: false
 ---
-## Summary
+## Résumé
 
 This update merges the ClientSim and UdonSharp packages into the Worlds package so they will be available in all projects moving forward. It also updates the Content Tags available in the Build panel to support the new [Content Gating system](https://hello.vrchat.com/blog/content-gating).
 
@@ -18,7 +18,7 @@ Make sure you update to [Creator Companion 2.1.6](https://vcc.docs.vrchat.com/ne
 
 <!--truncate-->
 
-## Changes
+## Changements
 
 * UdonSharp and ClientSim are now both included in the Worlds package within the "Integrations" folder.
 * UdonSharp and ClientSim added as "legacyPackages" in the Worlds package manifest to have the Creator Companion and Resolver properly remove them.

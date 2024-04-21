@@ -1,12 +1,12 @@
 ﻿---
 slug: release-3-1-10
 date: 2022-10-18
-title: Release 3.1.9
+title: Version 3.1.9
 authors: [momo]
 tags: [release]
 draft: false
 ---
-### Summary
+### Résumé
 
 Major Updates to Udon Graph Usability.
 
@@ -43,5 +43,5 @@ Major Updates to Udon Graph Usability.
     * Use this to quickly see how the program arrives at the particular node
     * If the node doesn't have any flow connections - nothing will happen
 
-### Changes
+### Changements
 * Changes video link in UdonSyncPlayer example to point to new location

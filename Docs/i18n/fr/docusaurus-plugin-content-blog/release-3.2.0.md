@@ -1,12 +1,12 @@
 ---
 slug: release-3-2-0
 date: 2023-05-03
-title: Release 3.2.0
+title: Version 3.2.0
 authors: [momo]
 tags: [release]
 draft: false
 ---
-### Summary
+### Résumé
 
 Adds DataContainers, PhysBones 1.1 ('Squishy PhysBones'), AsyncGPUReadback, and more.
 
@@ -50,7 +50,7 @@ Adds DataContainers, PhysBones 1.1 ('Squishy PhysBones'), AsyncGPUReadback, and 
         - You don't need to worry about this tool if you don't know why you'd do that.
     - [See the full docs for more info](/worlds/udon/networking/network-id-utility)
 
-### Changes since 3.2.0-beta.1
+### Changements since 3.2.0-beta.1
 - Re-added some public methods that got removed, including `GetOrAddComponent`
     - These are marked as `[Obsolete]` now, make sure to migrate away from using them as they will be removed properly at a later date
 - Fixed some issues with grabbing PhysBones in Unity
@@ -74,7 +74,7 @@ Here are the other similar changes you should make:
 
 PhysBoneGrabHelper moved assemblies, you may need to reference the `VRC.SDK3A` assembly now from your code. [Here is an example fix](https://github.com/BlackStartx/VRC-Gesture-Manager/pull/22).
 
-#### Changes not meant for public use
+#### Changements not meant for public use
 Additionally, we've made some changes to the following classes, which are _not_ considered part of the Public API for the SDK, and you should move away from using them as soon as possible.
 We will publish a document listing all the exclusions from our SDK before the end of May.
 - `ApiCacheEditor`

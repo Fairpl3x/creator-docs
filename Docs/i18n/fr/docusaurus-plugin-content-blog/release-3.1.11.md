@@ -1,14 +1,14 @@
 ﻿---
 slug: release-3-1-11
 date: 2023-02-16
-title: Release 3.1.11
+title: Version 3.1.11
 authors: [momo]
 tags: [release]
 draft: false
 ---
 Starting with this version, we will no longer be releasing the legacy `.unitypackage` files that extract into your `Assets` folder. This page will serve as a changelog for the SDK moving forward!
 
-### Summary
+### Résumé
 
 Adds Remote String Loading, Remote Image Loading, MIDI Playback, and Simulation Time!
 

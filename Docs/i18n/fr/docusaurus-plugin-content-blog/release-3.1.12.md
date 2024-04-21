@@ -1,12 +1,12 @@
 ﻿---
 slug: release-3-1-12
 date: 2023-03-29
-title: Release 3.1.12
+title: Version 3.1.12
 authors: [momo]
 tags: [release]
 draft: false
 ---
-### Summary
+### Résumé
 
 New VRCGraphics features for Udon, new avatar performance metrics, and bug fixes. Now up-to-date with VRChat 2023.1.2p4.
 

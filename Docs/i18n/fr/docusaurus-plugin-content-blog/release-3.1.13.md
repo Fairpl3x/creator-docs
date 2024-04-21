@@ -1,12 +1,12 @@
 ---
 slug: release-3-1-13
 date: 2023-03-31
-title: Release 3.1.13
+title: Version 3.1.13
 authors: [momo]
 tags: [release]
 draft: false
 ---
-### Summary
+### Résumé
 
 Fixes compatibility with Avatars 3.0 Manager.
 

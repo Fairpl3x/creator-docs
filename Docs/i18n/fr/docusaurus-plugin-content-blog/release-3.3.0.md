@@ -1,12 +1,12 @@
 ---
 slug: release-3-3-0
 date: 2023-09-11
-title: Release 3.3.0
+title: Version 3.3.0
 authors: [momo]
 tags: [release]
 draft: false
 ---
-### Summary
+### Résumé
 
 This release reworks the main user interface for the VRChat SDK (the 'Build panel'). It includes a new UI, quality-of-life improvements, and easier ways to build and update your content.
 
@@ -14,7 +14,7 @@ This update also adds support for the new 'Maximum capacity' and 'Recommended ca
 
 <!--truncate-->
 
-### Changes
+### Changements
 
 * Fully rebuilt the SDK Builder panel with new UI and features
 * Uploading Worlds and Avatars no longer requires entering Play Mode
