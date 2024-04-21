@@ -1,15 +1,15 @@
 ---
-title: "Worlds"
+title: "Mondes"
 hidden: false
 sidebar_position: 0
 createdAt: "2017-09-10T16:25:55.819Z"
 updatedAt: "2022-11-16T00:13:24.702Z"
 ---
-In VRChat, you can create and visit custom worlds powered by the Udon programming language!
+Dans VRChat, vous pouvez créer et visiter des mondes personnalisés alimentés par le langage de programmation Udon !
 
-To get started, check out [Creating Your First World](/worlds/creating-your-first-world).
+Pour commencer, consultez [Création de Votre Premier Monde](/worlds/creating-your-first-world).
 
-- [Allowed World Components](/worlds/whitelisted-world-components) 
-- [Supported Scripted Assets](/worlds/supported-assets) 
-- [World Creation, Optimization, and Community Labs Tips](/worlds/submitting-a-world-to-be-made-public)
-- [What is Udon?](/worlds/udon)
+- [Composants de Monde Autorisés](/worlds/whitelisted-world-components)
+- [Ressources Scriptées Prises en Charge](/worlds/supported-assets)
+- [Conseils sur la Création de Mondes, l'Optimisation et la Soumission aux Community Labs](/worlds/submitting-a-world-to-be-made-public)
+- [C'est quoi Udon?](/worlds/udon)
