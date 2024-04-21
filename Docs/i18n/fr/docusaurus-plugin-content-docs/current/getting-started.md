@@ -1,9 +1,9 @@
 ---
-title: "Bienvenue!"
+title: "Bienvenue !"
 slug: "getting-started"
 sidebar_position: -99
 ---
-Votre voyage en tant que créateur VRChat commence ici!
+Votre voyage en tant que créateur VRChat commence ici !
 
 Que vous soyez un développeur curieux ou chevronné, le SDK de VRChat vous offre les outils et les ressources pour libérer votre créativité et donner vie à votre imagination.
 
@@ -17,7 +17,7 @@ Que vous soyez un développeur curieux ou chevronné, le SDK de VRChat vous offr
 2. Si Unity n'est pas installé, le Creator Companion vous aidera à télécharger le Hub Unity, à installer Unity 2019.4.31f1, et à [créer un compte Unity](https://id.unity.com/account/new).
 3. Utilisez le Creator Companion pour créer un nouveau projet de Mondes ou d'Avatars, et ouvrez-le avec Unity.
 4. Construisez votre monde ou votre avatar dans Unity, et testez le dans VRChat en utilisant le Panneau de Contrôle du SDK.
-5. Une fois prêt, utilisez le Panneau de Contrôle du SDK pour publier votre Monde ou votre Avatar sur VRchat!
+5. Une fois prêt, utilisez le Panneau de Contrôle du SDK pour publier votre Monde ou votre Avatar sur VRchat !
 
 ## Création de Monde
 
