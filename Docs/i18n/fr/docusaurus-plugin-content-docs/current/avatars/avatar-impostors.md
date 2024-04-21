@@ -1,93 +1,92 @@
 ---
-title: "Impostors"
+title: "Imposteurs"
 slug: "avatar-impostors"
 hidden: false
 ---
 
-# Impostors
-## What are Impostors
-An impostor is your avatar's body double. It's what others will see when your avatar can't load for whatever reason, like if your avatar was uploaded for PC only but your friend is using a Quest. Typically, you'd show as a fallback avatar or robot, but creating an impostor will let you keep your unique style.
+# Imposteurs
+## Que sont des Imposteurs ?
+Un Imposteur est un double du corps de votre avatar. C'est ce que les autres verront lorsque votre avatar ne peut pas charger pour quelconque raison, comme par exemple, si votre avatar à été mis en ligne uniquement sur PC, mais que votre ami utilise un Quest. Typiquement, vous auriez dû être visible avec un fallback ou un robot, mais créer un imposteur vous permettra de garder votre style unique.
 
-## Creating an Impostor
-You can only generate impostors for avatars you [own and have uploaded](/avatars/creating-your-first-avatar), and impostors currently only support humanoid avatars.
+## Créer un Imposteur
+Vous ne pouvez créer des imposteurs que pour les avatars que vous [possédez et avez mis en ligne](/avatars/creating-your-first-avatar), et les imposteurs ne supportent actuellement que les avatars humanoïdes.
 
-To create your first impostor:
+Pour créer votre premier imposteur :
 
-1. Log in to the VRChat website.
+1. Connectez-vous au site VRChat.
 
-2. Navigate to "Avatars", then "My Avatars", then the name and icon of the avatar you'd like to make an impostor of.
+2. Naviguez sur "Avatars", puis sur "My Avatars", puis cliquez sur le nom ou l'icône de l'avatar pour lequel vous souhaitez créer un imposteur.
 
-3. Click "Generate Impostors", or, if the avatar already has an impostor that you'd like to be updated, "Regenerate Impostors".
+3. Cliquez sur "Generate Impostors", ou si l'avatar possède déjà un imposteur que vous aimeriez mettre à jour, sur "Regenerate Impostors".
 
-4. Wait.
+4. Patientez.
 
-5. Refresh the page, after some time you should now see that your avatar has impostors for Quest and PC.
+5. Rafraîchissez la page, après quelques instants, vous devriez voir que votre avatar possède des imposteurs pour Quest et PC.
 
 ![image](/img/avatars/impostors/generation.png)
 
- You can toggle impostors on and off. When off, your fallback avatar will be shown instead.
+Vous pouvez activer ou désactiver les imposteurs. Lorsque désactivés, votre fallback sera visible à la place.
 
+## Prévisualiser un Imposteur
+Une fois que votre imposteur est généré, vous serez certainement très excité de voir à quoi il ressemble !
 
-## Previewing an Impostor
-Once you've got your impostor generated, you're probably going to be pretty excited to see how it looks!
+1. Connectez-vous à VRChat.
 
-1. Log into VRChat.
+2. Ouvrez le menu Avatar depuis le menu principal.
 
-2. Open the Avatar Menu via your Main Menu.
+3. Cliquez sur l'avatar pour lequel vous avez généré un imposteur.
 
-3. Click the avatar that you generated an impostor for.
-
-4. You should notice that the "Features" of the avatar now includes "Impostor". 
+4. Vous devriez remarquer que les "Features" de l'avatar intègrent maintenant "Impostor".
 
 ![image](/img/avatars/impostors/features-row.png)
 
-You should also see a new button underneath the avatar model preview, which will allow you to switch between previewing the impostor and the normal avatar.
+Vous devriez également voir un nouveau bouton en dessous de l'aperçu de l'avatar, qui vous permettra de basculer la prévisualisation entre l'imposteur et l'avatar normal.
 
-**Note: Impostors that are previewed in this menu may exhibit some bugs not visible to other players.**
+**Note : Les Imposteurs qui sont prévisualisés dans ce menu peuvent exhiber des bogues qui ne sont pas visibles pour les autres joueurs.**
 
 ![image](/img/avatars/impostors/preview-avatar.png)
 ![image](/img/avatars/impostors/preview-impostor.png)
 
-## Customizing an Impostor
-Impostors come out pretty good by default, but complex avatars may benefit from some customization using the VRChat SDK.
+## Personnaliser un Imposteur
+Les Imposteurs se révèlent être très bons par défaut, mais les avatars complexes peuvent bénéficier de quelques personnalisations en utilisation le SDK VRChat.
 
-To customize, simply add the VRCImpostorSettings Script to your avatar before uploading.
+Pour personnaliser, ajoutez simplement un script VRCImpostorSettings sur votre avatar avant de le mettre en ligne.
 
 ## VRCImpostorSettings
 
-### Resolution Scale
-Changes the amount of space on the impostors texture atlas that is dedicated to this body part's texture. 
+### Resolution Scale (Taille de Résolution)
+Change la quantité d'espace sur la texture atlas des imposteurs dédiée à la texture de cette partie du corps.
 
-For instance, you can place this script on the head bone and change this value to make the head take up more or less of the texture atlas, increasing or decreasing the overall texture quality. Note that this may shrink other parts of the body on the atlas it if needs to. 
+Par exemple, vous pouvez placer ce script sur l'os de la tête et modifier cette valeur afin que la tête prenne plus ou moins de place sur la texture atlas, ce qui va augmenter ou diminuer la qualité globale de la texture. Notez que cela peut réduire les autres parties du corps sur l'atlas si nécessaire.
 
-_This is relative to the bone that VRCImpostorSettings is placed on._
+_Ceci est relatif à l'os sur lequel est placé VRCImpostorSettings._
 
-### Transforms To Ignore
-Ignores these transforms when capturing data for the impostor. This will hide them from the final result.
+### Transforms To Ignore (Transforms à Ignorer)
+Ignore ces Transforms lors de la capture de données pour l'imposteur. Cela va les cacher sur le résultat final.
 
-_This is independent of the bone that VRCImpostorSettings is placed on._
+_Ceci est indépendant de l'os sur lequel VRCImpostorSettings est placé._
 
-### Extra Child Transforms
-This is good for things like wings and tails, as it will tell the impostor generator to make a separate sprite for the bone this script is on.
+### Extra Child Transforms (Transforms Enfants Supplémentaires)
+C'est bien pour les choses comme les ailes et les queues, car il indique au générateur de l'imposteur de créer un sprite séparé pour l'os où est placé ce script.
 
-We don't recommend using this on smaller things like individual fingers as all sprites share a single texture sheet. Doing so would cause quality to decrease elsewhere.
+On ne recommande pas son utilisation sur des petites choses comme les doigts, car tous les sprites se partagent une seule texture. Le faire causerait une baisse de qualité partout ailleurs.
 
-_This is independent of the bone that VRCImpostorSettings is placed on._
+_Ceci est indépendant de l'os sur lequel VRCImpostorSettings est placé._
 
-### Re-parent Here
-Re-parents another bone to this impostor sprite. This means that it will be impostorized with this body part, and be a part of that sprite.
+### Re-parent Here (Reparenter Ici)
+Reparente un autre os sur ce sprite d'imposteur. Cela signifie qu'il sera ajouté avec cette partie du corps et fera parti de ce sprite.
 
-For instance, if you'd like your wings to be a part of the upper body, you can re-parent the root wing bone to the chest bone during impostorization with this.
+Par exemple, si vous souhaitez que vos ailes fassent parti du haut du corps, vous pouvez reparenter la base de l'os des ailes sur le buste pendant la génération de l'imposteur grâce à ce dernier.
 
-_This is relative to the bone that VRCImpostorSettings is placed on._
+_Ceci est relatif à l'os sur lequel est placé VRCImpostorSettings._
 
-## When is an impostor visible?
-Currently, there are only three ways to see an impostor:
+### Quand est-ce qu'un imposteur est visible ?
+Actuellement, il n'y a que trois manières de voir un imposteur :
 
-- Avatar Preview
+- Prévisualisation de l'avatar.
 
-- Performance Blocking (e.g. avatar is very poor but you have performance limit set to medium)
+- Blocage de performance (p. ex. l'avatar est "Very Poor", mais vous avez défini votre limite de performance sur "Medium")
 
-- Platform Mistmatch (e.g. avatar is uploaded for PC, but you're on a Quest)
+- Plateforme inadéquate (p. ex. l'avatar est mis en ligne pour PC, mais vous êtes sur Quest)
 
-**Note: Impostor auto-generation and support for non-humanoid avatars is coming in the future!**
+**Note : La génération automatique de l'imposteur et le support pour les avatars non-humanoïdes arrive dans le futur !**
