@@ -1,41 +1,44 @@
 ---
-title: "Public SDK API"
+title: "API Publique du SDK"
 slug: "public-sdk-api"
 hidden: false
 createdAt: "2023-08-18T21:01:07.855Z"
 updatedAt: "2023-08-18T21:04:48.137Z"
 ---
 
-The VRChat SDK provides a set of interfaces and methods you can use to enhance your world and avatar build process. 
+Le SDK de VRChat fournit un ensemble d'interfaces et de méthodes que vous pouvez utiliser pour améliorer votre processus de création de mondes et d'avatars.
 
-You can find the **Public SDK API** folder in both SDKs:
+Vous pouvez trouver le dossier **Public SDK API** dans les deux SDK :
 
-- Packages > VRChat SDK - Worlds > Editor > VRCSDK > SDK3 > Public SDK API
-- Packages > VRChat SDK - Avatars > Editor > VRCSDK > SDK3A > Public SDK API
+- Packages > com.vrchat.worlds > Editor > VRCSDK > SDK3 > Public SDK API
+- Packages > com.vrchat.avatars > Editor > VRCSDK > SDK3A > Public SDK API
 
-However, most of the events and methods are shared between both the world and avatar SDKs and are defined in the **Base SDK Package.**
+Cependant, la plupart des événements et méthodes sont partagés entre les SDK de mondes et d'avatars et sont définis dans:
 
-# What's available?
+- Packages > com.vrchat.base
 
-For the most up-to-date list of events and methods, we recommend looking at the files directly mentioned above.
+## Quest-ce qui est disponible?
 
-But here is a short list of what is available:
+Pour obtenir la liste la plus à jour des événements et méthodes, nous vous recommandons de consulter directement les fichiers mentionnés ci-dessus.
 
-- OnEnable/OnDisable events of the main SDK Panel
-- Build Start/End events
-- Upload Success/Error events
-- Build, Build and Test, and Build and Upload methods
+Voici cependant une petite liste de ce qui est disponible :
+
+- Événements OnEnable/OnDisable du panneau principal du SDK
+- Événements de début/fin de génération
+- Événements de succès/erreur d'envoi
+- Méthodes de génération, de génération et de test, et de génération et d'envoi
 
 :::note
-If you run into exceptions during the build process, you can view the list of expected exceptions in the Interface definitions.
+Si vous rencontrez des exceptions lors du processus de génération, vous pouvez consulter la liste des exceptions attendues dans les définitions d'interface.
 :::
-## Examples
 
-### Getting an instance of a builder
+## Exemples
 
-Connecting to `OnSdkPanelEnable` will ensure that the SDK window was opened and the builders were registered. You can then use `TryGetBuilder` to get an instance of the builder you need.
+### Obtenir une instance d'un générateur
 
-> You can call `VRCSdkControlPanel.TryGetBuilder` at any point in time, but it will return false if the SDK window is not open or the builder you're trying to access is not available.
+Se connecter à `OnSdkPanelEnable` garantira que la fenêtre du SDK a été ouverte et que les générateur ont été enregistrés. Vous pouvez ensuite utiliser `TryGetBuilder` pour obtenir une instance du générateur dont vous avez besoin.
+
+> Vous pouvez appeler `VRCSdkControlPanel.TryGetBuilder` à n'importe quel moment, mais il renverra `false` si la fenêtre du SDK n'est pas ouverte ou si le générateur que vous tentez d'accéder n'est pas disponible.
 
 ```cs
 [InitializeOnLoadMethod]
@@ -52,9 +55,9 @@ private static void AddBuildHook(object sender, EventArgs e)
 }
 ```
 
-### Running code before the build
+### Exécution du code avant la génération
 
-`OnSdkBuildStart` runs right before the SDK kicks off the build process, but after validations and Build Request Callbacks have passed.
+`OnSdkBuildStart` s'exécute juste avant le lancement du processus de construction par le SDK, mais après la validation et le passage des rappels de demande de construction.
 
 ```cs
 [InitializeOnLoadMethod]
@@ -77,7 +80,7 @@ private static void OnBuildStarted(object sender, object target)
 }
 ```
 
-### Building from script
+### Génération depuis un script
 
 ```cs
 [MenuItem("My Tools/Build Selected Avatar")]
@@ -92,9 +95,11 @@ public static async void BuildSelectedAvatar()
     }
 }
 ```
-## Heads up
-:::caution
-If you're currently using reflection to access the SDK internals, we recommend switching to the public API as soon as possible.
-:::
-We're going to make our best effort to provide a stable API, but it's still subject to change in the future. We recommend leveraging semver to define which version of the SDK your tools are compatible with. [Learn more here](https://vcc.docs.vrchat.com/vpm/packages/#versions-and-ranges).
 
+## À noter
+
+:::caution
+Si vous utilisez actuellement la réflexion pour accéder aux éléments internes du SDK, nous vous recommandons de passer à l'API publique dès que possible.
+:::
+
+Nous allons faire de notre mieux pour fournir une API stable, mais elle est encore sujette à des changements futurs. Nous vous recommandons de tirer parti de la sémantique de version pour définir avec quelle version du SDK vos outils sont compatibles. [En savoir plus ici](https://vcc.docs.vrchat.com/vpm/packages/#versions-and-ranges).
