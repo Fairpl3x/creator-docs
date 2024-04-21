@@ -123,6 +123,7 @@ The following software has not been authored by VRChat. Please read and respect 
 
 * [Unity](/sdk/upgrade/current-unity-version) 
 * [Blender](https://blender.org)
-* [Cats Blender Plugin](https://github.com/absolute-quantum/cats-blender-plugin)
+* [Cats Blender Plugin
+](https://github.com/absolute-quantum/cats-blender-plugin)
 * [Shotariya's Material Combiner](https://github.com/Grim-es/material-combiner-addon)
 * [Pumkin's Avatar Tools](https://github.com/rurre/PumkinsAvatarTools)
