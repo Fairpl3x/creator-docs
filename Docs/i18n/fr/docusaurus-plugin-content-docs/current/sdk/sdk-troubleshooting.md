@@ -17,7 +17,7 @@ Vérifiez la console d'Unity pour vous assurer qu'il n'y a pas d'erreurs de comp
 
 ## J'ai envoyé mon contenu, mais je ne le vois pas en jeu !
 Il y a quelques raisons pour lesquelles cela pourrait être le cas. Voici quelques éléments à vérifier :
-- Assurez-vous d'utiliser la [version correcte d'Unity](/sdk/current-unity-version).
+- Assurez-vous d'utiliser la [version correcte d'Unity](/sdk/upgrade/current-unity-version).
 - Assurez-vous d'utiliser le bon compte en jeu et de ne pas être connecté à un compte de plateforme.
 - Vérifiez l'onglet `Content Manager` dans la fenêtre du panneau de contrôle pour voir si votre contenu s'y trouve.
 - Vérifiez la console de l'éditeur pour voir s'il y a des erreurs lors de l'envoi.

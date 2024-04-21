@@ -60,7 +60,7 @@ Discutablement la partie la plus importante, vous devez trouver un modèle 3D à
 
 **Assurez-vous d'obtenir une licence d'utilisation du modèle que vous souhaitez utiliser.** Les artistes passent des centaines d'heures sur leurs modèles. Les utiliser sans licence constitue une violation des Conditions d'utilisation de VRChat, ainsi qu'une violation des droits de l'auteur du modèle.
 
-Vérifiez que le modèle que vous utilisez comporte moins de 70 000 triangles (7500 pour VRChat sur Meta Quest). Sur PC, vous pouvez téléverser des modèles dépassant cette limite, mais l'avatar sera automatiquement marqué comme ayant des performances "Very Poor", car un nombre excessif de polygones peut entraîner des problèmes de performance.
+Vérifiez que le modèle que vous utilisez comporte moins de 70'000 triangles (20'000 pour VRChat sur Meta Quest). Sur PC, vous pouvez téléverser des modèles dépassant cette limite, mais l'avatar sera automatiquement marqué comme ayant des performances "Very Poor", car un nombre excessif de polygones peut entraîner des problèmes de performance.
 
 ## Étape 2 - Importer le modèle dans votre projet
 

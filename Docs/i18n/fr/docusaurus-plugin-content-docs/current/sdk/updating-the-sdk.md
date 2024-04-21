@@ -1,5 +1,5 @@
 ---
-title: "Mise à jour du SDK"
+title: "Mettre à jour le SDK"
 slug: "updating-the-sdk"
 hidden: false
 createdAt: "2019-07-24T03:33:36.520Z"
@@ -88,4 +88,4 @@ Si vous réinstallez le SDK dans un projet contenant un monde avec des configura
 
 ## Mise à jour d'Unity
 
-Si vous mettez à jour à partir d'une version précédente d'Unity, nous avons un [guide de mise à jour](/sdk/migrating-to-a-newer-minor-unity-version) vers la dernière version prise en charge !
+Si vous mettez à jour à partir d'une version précédente d'Unity, nous avons un [guide de mise à jour](/sdk/upgrade) vers la dernière version prise en charge !

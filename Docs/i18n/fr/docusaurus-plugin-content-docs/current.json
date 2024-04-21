@@ -74,5 +74,9 @@
   "sidebar.tutorialSidebar.category.Android": {
     "message": "Android",
     "description": "The label for category Android in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Managing Unity": {
+    "message": "Managing Unity",
+    "description": "The label for category Managing Unity in sidebar tutorialSidebar"
   }
 }

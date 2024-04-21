@@ -6,9 +6,11 @@ createdAt: "2022-03-03T00:07:46.847Z"
 updatedAt: "2022-05-03T19:31:41.007Z"
 ---
 
-Les Contacts sont un nouveau système qui autorise les avatars à détecter des collisions sur soi-même ou d'autres avatars. Ces collisions peuvent ensuite être utilisées pour gouverner un Animator Controller et effectuer toutes sortes d'effets amusants.
+Les Contacts sont un système qui autorise les avatars à détecter des collisions sur soi-même ou d'autres avatars. Ces collisions peuvent ensuite être utilisées pour gouverner un Animator Controller et effectuer toutes sortes d'effets amusants.
 
 Ces contacts sont distincts des Colliders généraux d'Unity. Les Contacts sont divisés en émetteurs (Senders) et en récepteurs (Receivers).  Les émetteurs sont juste là pour être détectés. Les récepteurs détectent les émetteurs, puis mettent à jour les paramètres en conséquence.
+
+La quantité de contacts sur votre avatar affectent son [niveau de performance](/avatars/avatar-performance-ranking-system#pc-limits).
 
 ## VRCContactSender
 Le composant Contact Sender définit un volume qui enverra un signal de contact sur un Contact Receiver.  

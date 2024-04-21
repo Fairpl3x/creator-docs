@@ -53,7 +53,7 @@ Utilisez le constructeur de `VRCImageDownloader` pour créer un téléchargeur d
 
 #### DownloadImage
 
-Télécharge une image, puis appelle un événement indiquant une réussite ou un échec (voir 'Nouveaux Événements').  
+Télécharge une image, puis appelle un événement indiquant une réussite ou un échec (voir les 'Événements ci-dessous').  
 Retourne un `IVRCImageDownload`, qui peut être utilisé pour suivre la progression du téléchargement.
 
 - **Instance** : Le composant `ImageDownloader` qui télécharge l'image.
@@ -70,7 +70,7 @@ Nettoie `VRCImageDownloader`. Libère les texture téléchargée de la mémoire.
 
 - Appeler `Dispose` va invalider `VRCImageDownloader`, les `IVRCImageDownload` associés, et les texture téléchargées.
   - Après avoir appeler `Dispose`, l'état `VRCImageDownloadState` de `IVRCImageDownload` va changer en `Unloaded` jusqu'à qu'il soit collecté par le "Garbage collector".
-- `VRCImageDownloader` garde les textures en mémoire jusqu'à qu'il soit détruit ou éliminé en utilisant sa fonction `Dispose`.
+- `VRCImageDownloader` garde les textures en mémoire jusqu'à ce que la Texture2D sous-jacente soit détruite ou éliminée, en utilisant sa fonction `Dispose`.
 - Assurez-vous de sauvegarder la référence de votre `VRCImageDownloader` en tant que variable pour éviter qu'elle (et toute texture téléchargée) ne soit ramassée aléatoirement par le "Garbage collector".
 
 #### TextureInfo

@@ -8,7 +8,8 @@ updatedAt: "2022-03-04T00:41:09.121Z"
 Comme les Avatar Dynamics est un système complexe, il est tout à fait compréhensible de faire une erreur pendant la création de votre avatar. Pour faciliter les tests et la résolution de problèmes, nous avons fourni aux utilisateurs quelques outils pour rendre le processus plus facile.
 
 ### Débogage en Jeu
-<iframe src='https://gfycat.com/ifr/LiveWhimsicalGuineafowl' frameborder='0' scrolling='no' allowfullscreen width='640' height='404'></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/8hqDquZWvhY?si=Mp7pM80fCYZPei81" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 En utilisant le Menu Action, vous pouvez à présent utiliser l'option "Avatar Overlay", afin d'avoir une représentation visuelle des [PhysBones](/avatars/avatar-dynamics/physbones) et des [Contacts](/avatars/avatar-dynamics/contacts) directement dans le jeu. Ceux-ci sont utiles afin de voir exactement ce qu'il se passe, ou pour vérifier si les objets ont été correctement configurés.
 
