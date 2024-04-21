@@ -1,7 +1,7 @@
 ---
 title: "Chargement d'Image"
 slug: "image-loading"
-excerpt: "Display image files from the internet in your VRChat world"
+excerpt: "Afficher des fichiers image depuis Internet dans votre monde VRChat"
 hidden: false
 createdAt: "2023-02-07T01:09:55.404Z"
 updatedAt: "2023-05-15T15:20:08.022Z"

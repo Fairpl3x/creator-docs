@@ -5,7 +5,7 @@ hidden: false
 ---
 
 # Imposteurs
-## Que sont des Imposteurs ?
+## Que sont les Imposteurs ?
 Un Imposteur est un double du corps de votre avatar. C'est ce que les autres verront lorsque votre avatar ne peut pas charger pour quelconque raison, comme par exemple, si votre avatar à été mis en ligne uniquement sur PC, mais que votre ami utilise un Quest. Typiquement, vous auriez dû être visible avec un fallback ou un robot, mais créer un imposteur vous permettra de garder votre style unique.
 
 ## Créer un Imposteur

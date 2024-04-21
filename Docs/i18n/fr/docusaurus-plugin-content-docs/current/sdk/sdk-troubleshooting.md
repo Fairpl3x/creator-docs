@@ -1,7 +1,7 @@
 ---
 title: "Dépannage du SDK"
 slug: "sdk-troubleshooting"
-excerpt: "Common SDK issues and how to solve them"
+excerpt: "Problèmes courants liés au SDK et comment les résoudre"
 hidden: false
 createdAt: "2017-09-29T02:44:14.279Z"
 updatedAt: "2020-04-23T03:39:19.161Z"

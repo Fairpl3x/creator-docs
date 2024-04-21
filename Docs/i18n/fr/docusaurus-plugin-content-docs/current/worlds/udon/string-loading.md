@@ -1,7 +1,7 @@
 ---
 title: "Chargement de String"
 slug: "string-loading"
-excerpt: "Load text files from the internet in your VRChat worlds"
+excerpt: "Charger des fichiers texte depuis Internet dans vos mondes VRChat"
 hidden: false
 createdAt: "2023-02-07T01:10:57.067Z"
 updatedAt: "2023-03-26T00:35:05.784Z"

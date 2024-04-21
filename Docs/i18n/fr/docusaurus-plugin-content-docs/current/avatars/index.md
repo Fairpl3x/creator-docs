@@ -1,13 +1,13 @@
 ---
 title: "Avatars"
-excerpt: "Learn about VRChat's Avatars 3.0 SDK"
+excerpt: "Découvrez le SDK pour les avatars 3.0 de VRChat"
 hidden: false
 createdAt: "2020-07-08T17:39:44.315Z"
 updatedAt: "2023-04-03T18:46:53.072Z"
 sidebar_position: 0
 ---
 
-VRChat vous permet de créer et d'envoyer des avatars personnalisés!
+VRChat vous permet de créer et de mettre en ligne des avatars personnalisés!
 
 # Créer des Avatars
 
