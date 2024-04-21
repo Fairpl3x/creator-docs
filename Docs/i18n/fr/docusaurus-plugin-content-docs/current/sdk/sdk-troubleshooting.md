@@ -1,45 +1,45 @@
 ---
-title: "SDK Troubleshooting"
+title: "Dépannage du SDK"
 slug: "sdk-troubleshooting"
 excerpt: "Common SDK issues and how to solve them"
 hidden: false
 createdAt: "2017-09-29T02:44:14.279Z"
 updatedAt: "2020-04-23T03:39:19.161Z"
 ---
-Here are common issues you may come across when using the SDK and how to solve them. You can find some additional assistance at our [Help Knowledgebase](http://help.vrchat.com).
+Voici des problèmes courants que vous pourriez rencontrer lors de l'utilisation du SDK, et comment les résoudre. Vous pouvez également trouver de l'aide supplémentaire sur notre [Help Knowledgebase](http://help.vrchat.com).
 
-## The build control panel isn't appearing in the VRChat SDK menu dropdown!
-There are two main reasons this might be happening: 
+## Le panneau de contrôle du SDK n'apparaît pas dans le menu déroulant VRChat SDK !
+Il y a deux raisons principales pour lesquelles cela pourrait se produire :
 
-Make sure you're using the recommended version for VRChat. (See [Setting up the SDK](/sdk))
+Assurez-vous d'utiliser la version recommandée pour VRChat. (Voir [Configuration du SDK](/sdk))
 
-Check your console tab to ensure there aren't any compilation errors from third-party scripts or components. If there are, you may need to remove those components/scripts.
+Vérifiez la console d'Unity pour vous assurer qu'il n'y a pas d'erreurs de compilation provenant de scripts ou de composants tiers. Si c'est le cas, vous devrez peut-être supprimer ces composants/scripts.
 
-## I uploaded my content but I can't see it in-game!
-There are a few reasons this might be the case. Here are some things to check:
-- Make sure you are using the [correct version of Unity](/sdk/current-unity-version).
-- Make sure you are using the correct account in-game and are not logged into a platform account.
-- Check the `Content Manger` tab found in the control panel window to see if your content is there.
-- Check the editor console to see if there were any errors when uploading.
+## J'ai envoyé mon contenu, mais je ne le vois pas en jeu !
+Il y a quelques raisons pour lesquelles cela pourrait être le cas. Voici quelques éléments à vérifier :
+- Assurez-vous d'utiliser la [version correcte d'Unity](/sdk/current-unity-version).
+- Assurez-vous d'utiliser le bon compte en jeu et de ne pas être connecté à un compte de plateforme.
+- Vérifiez l'onglet `Content Manager` dans la fenêtre du panneau de contrôle pour voir si votre contenu s'y trouve.
+- Vérifiez la console de l'éditeur pour voir s'il y a des erreurs lors de l'envoi.
 
-## I can't see one of the windows but there aren't any errors!
-In rare cases, Unity tabs can go off screen and become inaccessible. You'll need to delete some registry keys to get these windows back on your screen. 
+## Je ne peux pas voir l'une des fenêtres, mais il n'y a pas d'erreurs !
+Dans de rares cas, les onglets d'Unity peuvent sortir de l'écran et devenir inaccessibles. Vous devrez supprimer certaines clés de registre pour ramener ces fenêtres sur votre écran.
 
-1. Close Unity.
-2. Press your Windows key and type `regedit`. Press Enter. You'll be prompted by UAC to permit Administrator access.
-3. Be very careful in `regedit`! This application contains all of the settings for your PC.
-4. Find the following key: `Computer\HKEY_CURRENT_USER\Software\Unity Technologies\Unity Editor 5.x`. You can do by pasting it into the bar at the top of `regedit`, or if you don't have a bar at the top of the window, navigating through the directory listing on the left.
-5. Remove ALL keys in that directory that start with `VRC`, including `VRCSDK2` or any other related keys.
-6. Close `regedit`.
-7. Reopen Unity. You should be good to go!
+1. Fermez Unity.
+2. Appuyez sur la touche Windows et tapez `regedit`. Appuyez sur Entrée. Vous serez invité par l'UAC à autoriser un accès administrateur.
+3. Soyez très prudent dans `regedit` ! Cette application contient tous les paramètres de votre PC.
+4. Trouvez la clé suivante : `Ordinateur\HKEY_CURRENT_USER\Software\Unity Technologies\Unity Editor 5.x`. Vous pouvez le faire en la collant dans la barre en haut de `regedit`, ou si vous n'avez pas de barre en haut de la fenêtre, en naviguant dans la liste des répertoires sur la gauche.
+5. Supprimez TOUTES les clés de ce répertoire qui commencent par `VRC`, y compris `VRCSDK2` ou toutes les autres clés associées.
+6. Fermez `regedit`.
+7. Rouvrez Unity. Vous devriez pouvoir continuer !
 
-## I'm getting errors related to SDK3 or Udon in a project using SDK2 or VRC_SpatialAudioSource in a project using SDK3!
+## Je reçois des erreurs liées à SDK3 ou Udon dans un projet utilisant SDK2 ou VRC_SpatialAudioSource dans un projet utilisant SDK3 !
 
-1. Follow [the correct steps](/sdk/updating-the-sdk) on removing your SDK by closing Unity and removing all the SDK related folders and their related `.meta` files.
-2. Go to your `Project Settings` and find `Scripting Define Symbols` under `Player > Other Settings`.
-3. Remove the symbols that are not associated with the SDK your project was made on. For projects made with SDK2 remove `UDON` and `VRC_SDK_VRCSDK3`. For projects made with SDK3 remove `VRC_SDK_VRCSDK2`. The symbols are separated by `;`. Afterwards save changes by pressing `Enter`.
-4. Import the correct SDK into the project.
+1. Suivez [les étapes correctes](/sdk/updating-the-sdk) pour supprimer votre SDK en fermant Unity et en supprimant tous les dossiers liés au SDK et leurs fichiers `.meta` associés.
+2. Accédez à `Project Settings` et recherchez `Scripting Define Symbols` sous `Player > Other Settings`.
+3. Supprimez les symboles qui ne sont pas associés au SDK avec lequel votre projet a été créé. Pour les projets créés avec SDK2, supprimez `UDON` et `VRC_SDK_VRCSDK3`. Pour les projets créés avec SDK3, supprimez `VRC_SDK_VRCSDK2`. Les symboles sont séparés par `;`. Ensuite, enregistrez les modifications en appuyant sur `Entrée`.
+4. Importez le bon SDK dans le projet.
 
-## I have a problem that the Knowledgebase doesn't solve and isn't listed here!
+## J'ai un problème qui n'est pas répertorié ici !
 
-Sorry about that! Please browse our [official knowledgebase](http://help.vrchat.com/) or [submit a support request](https://help.vrchat.com/hc/en-us/requests/new). We're happy to help you.
+Désolé pour ça ! Veuillez consulter notre [base de connaissances officielle](http://help.vrchat.com/) ou [envoyer une demande de support](https://help.vrchat.com/hc/en-us/requests/new). Nous seront heureux de vous aider.
