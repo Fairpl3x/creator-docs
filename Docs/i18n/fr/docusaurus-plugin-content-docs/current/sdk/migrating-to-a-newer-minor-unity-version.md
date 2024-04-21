@@ -1,60 +1,61 @@
 ---
-title: "Migrating to a newer Minor Unity Version"
+title: "Migrer vers une nouvelle Version Mineure d'Unity"
 slug: "migrating-to-a-newer-minor-unity-version"
 hidden: false
 createdAt: "2022-11-30T18:50:12.586Z"
 updatedAt: "2022-11-30T18:50:12.586Z"
 ---
-Occasionally, VRChat will update within major Unity versions. 
+Occasionnellement, VRChat sera mis à jour sur des versions majeures d'Unity.
 
-Upgrading your projects between these is easy in comparison to major version switches.
+Mettre à jour vos projets entre celles-ci est facile comparé aux changements de versions majeures.
 
-## Upgrade Steps
+## Étapes de Mise à jour
 
-### Step 1 - Install the New Unity Version
+### Étape 1 - Installer la nouvelle version d'Unity
 
-Close all of your open projects.
+Fermez tous vos projets ouverts.
 
-Check the [Currently Supported Unity Version](/sdk/current-unity-version) and install the new version of Unity via Unity Hub. 
+Vérifiez la [Version actuellement prise en charge d'Unity](/sdk/current-unity-version) et installez la nouvelle version d'Unity via Unity Hub.
 
-Although we list the standalone installer on that page, you *really* should be using Hub. We're assuming you're using it in these steps.
+Bien que nous listions le programme d'installation autonome sur cette page, vous *devriez vraiment* utiliser Unity Hub. Nous supposons que vous l'utilisez dans ces étapes.
 
-### Step 2 - Make a Copy of your Project
+### Étape 2 - Faites une Copie de Votre Projet
 
-Always create a backup of your project before making big, potentially destructive changes. You can do this by just making a copy of the project folder and migrating that instead of your main project. That way, if it messes up, you can delete it and start over.
+Créez toujours un backup de votre projet avant d'apporter des modifications importantes et potentiellement destructrices. Vous pouvez le faire en copiant simplement le dossier du projet et en migrant cette copie au lieu de votre projet principal. De cette manière, si quelque chose tourne mal, vous pourrez le supprimer et recommencer.
 
-If you're an advanced user and know how to use version control like [git](https://git-scm.com/), you definitely should use that. It makes managing backups like this trivial.
+Si vous êtes un utilisateur avancé et que vous savez comment utiliser un système de contrôle de version comme [git](https://git-scm.com/), vous devriez certainement l'utiliser. Il simplifie la gestion des sauvegardes.
 
-### Step 3 - Open Your Project
+### Étape 3 - Ouvrez Votre Projet
 
-Open the copy of your project in the new version. 
+Ouvrez la copie de votre projet dans la nouvelle version.
 
-You'll get some upgrade warnings. This is fine! Click "Yes", "OK", or whatever the "affirmative" button may be.
+Vous obtiendrez quelques avertissements de mise à niveau. C'est normal ! Cliquez sur "Oui", "OK" ou n'importe quel message une confirmation.
 
-After some time, your migration will be complete. That's it!
+Après un certain temps, votre migration sera terminée. C'est tout !
 
-### Step 4 - Update your SDK
+### Étape 4 - Mettez à Jour Votre SDK
 
-SDK updates aren't always needed in minor version upgrades. If they are, this is when you'd do it.
+Les mises à jour du SDK ne sont pas toujours nécessaires lors de mises à niveau de version mineure. Si elles le sont, c'est à ce moment que vous devrez le faire.
 
-Close your project after migration, and use the [VCC](https://vcc.docs.vrchat.com/) to upgrade your SDK.
+Fermez votre projet après la migration et utilisez le [VCC](https://vcc.docs.vrchat.com/) pour mettre à jour votre SDK.
 
-## Tips and Other Info
+## Conseils et Autres Informations
 
-Here are a few additional tips that may help you out in the process.
+Voici quelques conseils supplémentaires qui pourraient vous être utiles pendant le processus.
 
-### Unity Warnings
+### Avertissements d'Unity
 
-There are a few Unity warnings that may pop up during migration that you can safely click past. Here are a few you may see.
+Il y a quelques avertissements d'Unity qui peuvent apparaissent lors de la migration et que vous pouvez ignorer en toute sécurité. En voici quelques-uns que vous pourriez rencontrer.
+
 ![migrating-to-a-newer-minor-unity-version-f3995eb-image_10.png](/img/sdk/migrating-to-a-newer-minor-unity-version-f3995eb-image_10.png)
 
 ![migrating-to-a-newer-minor-unity-version-b20553b-image_11.png](/img/sdk/migrating-to-a-newer-minor-unity-version-b20553b-image_11.png)
 
-### Clean Up the Copy
+### Nettoyez la Copie
 
-If your project is large, migration might take a long time. There are a few folders that you don't need to migrate over if the project is especially huge. You can delete these folders safely from the copy.
+Si votre projet est volumineux, la migration peut prendre beaucoup de temps. Il y a quelques dossiers que vous n'avez pas besoin de migrer si le projet est particulièrement volumineux. Vous pouvez supprimer ces dossiers sans aucun souci de la copie.
 
-You probably won't have all of these folders in your project.
+Vous n'aurez probablement pas tous ces dossiers dans votre projet.
 ```text
 /Library/
 /Temp/
@@ -64,8 +65,9 @@ You probably won't have all of these folders in your project.
 /Logs/
 /UserSettings/
 ```
-## Version Warnings
+## Avertissements de Version
 
-The SDK may warn you that you're on the wrong version, even though you _know_ you're on the correct one.
+Le SDK peut vous avertir que vous êtes sur la mauvaise version, même si vous *savez* que vous êtes sur la bonne.
 ![migrating-to-a-newer-minor-unity-version-1b8194d-2022-11-30_10-35-54_chrome.png](/img/sdk/migrating-to-a-newer-minor-unity-version-1b8194d-2022-11-30_10-35-54_chrome.png)
-This is fine! If you know for a fact you're on the correct version, you can ignore this message.
+
+C'est Ok ! Si vous savez avec certitude que vous avez la bonne version, vous pouvez ignorer ce message.
