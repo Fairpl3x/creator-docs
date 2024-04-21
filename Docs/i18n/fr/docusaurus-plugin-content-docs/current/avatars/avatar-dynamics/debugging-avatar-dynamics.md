@@ -1,20 +1,20 @@
 ---
-title: "Debugging Avatar Dynamics"
+title: "Déboguer les Avatar Dynamics"
 slug: "debugging-avatar-dynamics"
 hidden: false
 createdAt: "2022-03-03T00:20:06.462Z"
 updatedAt: "2022-03-04T00:41:09.121Z"
 ---
-As Avatar Dynamics is a complex system, it’s understandably easy to make a mistake while building your avatar. To help with both testing and debugging problems, we’ve provided users with a few tools to help make the process easier.
+Comme les Avatar Dynamics est un système complexe, il est tout à fait compréhensible de faire une erreur pendant la création de votre avatar. Pour faciliter les tests et la résolution de problèmes, nous avons fourni aux utilisateurs quelques outils pour rendre le processus plus facile.
 
-### In Game Debugging
+### Débogage en Jeu
 <iframe src='https://gfycat.com/ifr/LiveWhimsicalGuineafowl' frameborder='0' scrolling='no' allowfullscreen width='640' height='404'></iframe>
 
-Using the Action Menu you can now use the Avatar Overlay option to show visual representations of both [PhysBones](/avatars/avatar-dynamics/physbones) and [Contacts](/avatars/avatar-dynamics/contacts) live in game. These are useful for seeing exactly what is happening, or if objects have been set up properly.
+En utilisant le Menu Action, vous pouvez à présent utiliser l'option "Avatar Overlay", afin d'avoir une représentation visuelle des [PhysBones](/avatars/avatar-dynamics/physbones) et des [Contacts](/avatars/avatar-dynamics/contacts) directement dans le jeu. Ceux-ci sont utiles afin de voir exactement ce qu'il se passe, ou pour vérifier si les objets ont été correctement configurés.
 
-### In-Editor Debugging
-Both [PhysBones](/avatars/avatar-dynamics/physbones)  and [Contacts](/avatars/avatar-dynamics/contacts) run in the editor as they would in the client. By entering Play mode you are able to simulate these systems and see how your avatar will react without needing to upload your avatar.
+### Débogage dans l'Éditeur
+Les [PhysBones](/avatars/avatar-dynamics/physbones) et des [Contacts](/avatars/avatar-dynamics/contacts) s'exécutent tous deux dans l'éditeur comme ils le feraient dans le client. En entrant en mode Play, vous êtes en mesure de simuler ces systèmes et de voir comment votre avatar va réagir sans avoir besoin de le mettre en ligne.
 
-As long as an animation controller has been added to the Animator component of your avatar, parameters will be updated as they would be in game. Remember to add the animation controller before entering play mode!
+Dans la mesure où un Animator Controller à été ajouté dans le composant Animator de votre avatar, les paramètres seront mis à jour tel qu'ils le seraient dans le jeu. Rappelez-vous d'ajouter un Animator Controller avant d'enter en mode Play !
 
-Additionally, even if no animation controller is set up, you can still look at each component and see the values they would be giving for each parameter.
+De plus, même si aucun Animator Controller n'est configuré, vous pouvez tout de même examiner chaque composant et voir les valeurs qu'ils donneraient pour chaque paramètre.
