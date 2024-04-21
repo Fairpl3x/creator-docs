@@ -21,6 +21,7 @@ Occasionnellement, VRChat sera mis à jour sur des versions mineures d'Unity. Pa
 Les mises à jour peuvent peuvent échouer. Si vous garder vos fichier de projet initial en lieu sûr, vous pouvez les restaurer, ressayer, et trouver ce qu'il s'est mal passé.
 
 Sans sauvegarde, vous n'aurez pas de seconde chance. Si vous faites une erreur ou si la mise à jour échoue, le réparer peut être difficile, voir impossible.
+::: 
 
 ## Ouvrez Votre Projet
 
