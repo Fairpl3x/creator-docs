@@ -1,37 +1,37 @@
 ---
 slug: release-3-5-0
 date: 2023-12-08
-title: Release 3.5.0
+title: Version 3.5.0
 authors: [momo]
 tags: [release]
 draft: false
 ---
-## Summary
+## Résumé
 
-This is the first SDK that works with Unity 2022!
+C'est le tout premier SDK qui fonctionne avec Unity 2022 !
 
 <!--truncate-->
 
-## Notes on Usage
+## Notes sur l'Utilisation
 
-You will need to update your Creator Companion to version 2.2.0 in order to manage the 2022-based Unity Editor and make 2022-compatible projects. You can check your current version by clicking on "Settings" and looking in the upper-right corner.
+Vous aurez besoin de mettre à jour votre Creator Companion à la version 2.2.0 afin de pouvoir gérer l'éditeur Unity 2022 pour créer des projets compatibles Unity 2022. Vous pouvez vérifier votre version actuelle en cliquant sur "Settings", puis en regardant dans le coins supérieur droit.
 
-## New Features
+## Nouvelles Fonctionnalités
 
-* There is a new "Default VRChat Scene" that you can choose when making a new scene which has all the basics needed for a VRChat World.
-* `OnScreenUpdateEvent` is a new event triggered in Udon when a player visits on a mobile device. It contains information about the Orientation and Resolution of the screen when they first enter the world, and whenever the Orientation of their device changes. 
+* Il y a une nouvelle "Scène par Défaut VRChat" que vous pouvez choisir lors de la création d'une nouvelle scène avec tout les éléments de base nécessaires pour un monde VRChat.
+* `OnScreenUpdateEvent` est un nouvelle événement déclenché dans Udon lorsque un utilisateur visite depuis un appareil mobile. Il contient des informations sur l'Orientation et la Résolution de l'écran lorsque qu'il entre dans un monde, ou à chaque fois que l'Orientation de leur appareil change.
 
-## Changes
+## Changements
 
-* Switches from .NET Framework 4.x to .NET Standard 2.1.
-* Restores UdonSharp Samples, now  listed under World Samples.
-* Restores UdonSharp and ClientSim legacyFiles.
+* Passe de .NET Framework 4.x à .NET Standard 2.1.
+* Restaure les exemples UdonSharp, désormais répertoriés sous World Samples.
+* Restaure les anciens fichiers d'UdonSharp et de ClientSim.
 
-## Known Issues
+## Problèmes Connus
 
-* The first time you open a Scene and select a GameObject inside a prefab with a U# Behaviour, the GUI for the component directly below that U# Behaviour will not show its GUI. Deselecting and re-selecting the prefab fixes this.
-* Buffer Particles don't work as they did in Unity 2019, [there is a workaround to fix them from community member hfcRed here](https://x.com/hfcRedddd/status/1696915379090604179).
-* The Editor may crash when updating a shader graph reference by another shader using UsePass. This is an issue with Unity 2022.3.6f1 and is fixed in 2022.3.14f1.
-* Unity 2022 sometimes causes Rider's debugger to stop for unhandled exceptions in Unity's IMGUI.
-	* Please refer to [this workaround](https://forum.unity.com/threads/rider-debugger-breaks-on-unhandled-exception.1135879/#post-7305256) and [Jetbrains's bug tracker](https://youtrack.jetbrains.com/issue/RIDER-64944) for more information.
-* Spatialized Audio Sources can create warnings when entering playmode or adjusting their settings.
+* La première fois que vous ouvrez une Scène et sélectionnez un GameObject dans un prefab avec un U# Behaviour, l'interface graphique pour le composant situé directement au dessous du U# Behaviour n'affichera pas son interface graphique. Désélectionner et re-sélectionner le prefab règle cela.
+* les particules tampons (Buffer Particles) ne fonctionne pas comme elles le faisait dans Unity 2019, [il y a une solution de contournement pour les réparer, par hfcRed, un membre de la communauté, ici](https://x.com/hfcRedddd/status/1696915379090604179).
+* L'editor peut planter si on met à jour une référence d'un shader graph avec un autre shader en utilisant UsePass. C'est une problème avec Unity 2022.3.6f1 et c'est réglé dans Unity 2022.3.14f1.
+* Unity 2022 cause parfois un l'arrêt du debugger de Rider pour une exceptions non gérée dans l'IMGUI d'Unity.
+	* Veuillez vous référer à [cette solution de contournement](https://forum.unity.com/threads/rider-debugger-breaks-on-unhandled-exception.1135879/#post-7305256) et au [bug tracker de Jetbrains](https://youtrack.jetbrains.com/issue/RIDER-64944) pour plus d'information.
+* Les Audio Sources spatialisées peuvent créer des avertissements en entrant en mode Play, ou en ajustant leur paramètres.
