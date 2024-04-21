@@ -1,25 +1,25 @@
 ---
 slug: release-3-4-1
 date: 2023-10-13
-title: Release 3.4.1
+title: Version 3.4.1
 authors: [momo]
 tags: [release]
 draft: false
 ---
-## Summary
+## Résumé
 
-This update addresses post-3.4.0 issues and makes minor usability improvements to the SDK.
+Cette mise à jour résout les problèmes post-3.4.0 et apporte des améliorations mineures de l'utilisation du SDK.
 
 :::caution
 
-Make sure you update to [Creator Companion 2.1.6](https://vcc.docs.vrchat.com/news/release-2.1.6) or higher before updating to this version of the SDK!
+Assurez-vous de mettre à jour vers [Creator Companion 2.1.6](https://vcc.docs.vrchat.com/news/release-2.1.6) ou supérieur avant de passer à cette version du SDK !
 
 :::
 
 <!--truncate-->
 
-## Changes
+## Changements
 
-* Fixes an issue causing the SDK to fail to upload with a "Missing Credentials" error.
-* Fixes an issue where avatars without Animators would break the validation messages in the SDK Builder Panel. Addresses [this Canny](https://feedback.vrchat.com/sdk-bug-reports/p/add-a-message-to-the-sdk-window-about-missing-animator-component-when-it-is-miss).
-* Changes "Last Updated" time to show Local Time instead of UTC. Addresses [this Canny](https://feedback.vrchat.com/sdk-bug-reports/p/label-last-updated-date-and-time-in-upload-panel-as-utc).
+* Résout un problème provoquant l'échec du téléchargement du SDK avec une erreur "Missing Credentials".
+* Résout un problème où les avatars sans Animator peuvent casser les messages de validation dans le panneau de construction du SDK. Résout [ce Canny](https://feedback.vrchat.com/sdk-bug-reports/p/add-a-message-to-the-sdk-window-about-missing-animator-component-when-it-is-miss).
+* Change l'heure de "Last Updated" pour afficher l'heure locale au lieu de l'UTC. Résout [ce Canny](https://feedback.vrchat.com/sdk-bug-reports/p/label-last-updated-date-and-time-in-upload-panel-as-utc).
