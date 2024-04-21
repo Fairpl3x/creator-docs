@@ -1,5 +1,5 @@
 ---
-title: "Video Player Allowlist"
+title: "Liste blanche pour les Lecteurs Vidéo"
 slug: "www-whitelist"
 hidden: false
 createdAt: "2020-09-10T18:56:07.748Z"
@@ -7,37 +7,38 @@ updatedAt: "2023-03-09T22:55:53.659Z"
 ---
 :::note
 
-VRChat on Quest can play videos from direct links to video files. These URLs typically end with a filename ending in a supported video type like http://something.com/video.mp4 or http://test.com/cats.webm. If you visit the link and see a whole website around a video, that link will probably not play on Android / Quest because the application that VRChat uses to resolve these links into videos does not run on Android.  Creators will need to move the video to a host that supports direct links, or find another way to work around this issue.
+VRChat sur Quest peut lire des vidéos à partir de liens directs vers des fichiers vidéo. Ces URLs se terminent généralement avec un nom de fichier vidéo supporté, comme par exemple http://something.com/video.mp4 ou http://test.com/cats.webm. Si vous visitez le lien et voyez tout un site autour de la vidéo, ce lien ne se lira probablement pas sur Android /  Quest car l'application que VRChat utilise pour résoudre ces liens vers des vidéos ne s'exécute pas sur Android. Les créateurs devront déplacer la vidéo vers un hôte qui supporte les liens directs, ou devront trouver une solution pour contourner ce problème.
 
-Some workarounds exist for advanced users. VRChat has not reviewed these methods, does not condone them, and cannot guarantee their continued operation, but they have been recommended by suggested edits to our documentation.
+Quelque solutions de contournement existent pour les utilisateurs avancés. VRChat n'a pas examiné ces méthodes, ne les approuve pas et ne peut garantir leur fonctionnement continuel, mais elles ont été recommandées par des modifications suggérées à notre documentation.
 
 * [Streamlink](https://streamlink.github.io)
 * [ArchiTechAnon's "Understanding URLs in VRChat" post](https://ask.vrchat.com/t/protv-by-architechanon-usage-guides-and-walkthroughs/7029/11)"
 
-Future updates may improve this functionality.
+De futures mises à jour pourront améliorer cette fonctionnalité.
 
 :::
 
-The following services are on the video player allowlist.
+Les services suivants sont sur la liste blanche du lecteur vidéo.
 
-If a service is not on this list, it will not play unless "Allow Untrusted URLs" is checked in Settings.
+Si un service n'est pas dans cette liste, il n'y a aura pas de lecture à moins d'avoir activé "Allow Untrusted URLs" dans les paramètres.
 
-VRChat on Android will not play video if the host is not using HTTPS protocol.
+VRChat sur Android ne lira pas de vidéos si l'hôte n'utilise pas le protocole HTTPS.
 
 :::caution
 
-The example video player in the SDK will not handle cases in which the master has "Untrusted URLs" disabled, which will result in videos being unable to play. User-created video players may want to modify the Udon code to give sync ownership to the user requesting the video.
+Le lecteur vidéo en exemple dans le SDK ne gérera pas les cas où le Master a désactivé "Untrusted URLs", ce qui empêchera la lecture des vidéos. Les lecteurs vidéo créés par les joueurs devront avoir un code Udon modifié pour donner la propriété de synchronisation à l'utilisateur demandant la vidéo.
 :::
 
-## Allowlisted Services
-The services listed below are inherently trusted and are permitted with our default URL allowlist. The resource being accessed (as in, the URL you enter into/use in the video player) must reside in the service domain listed next to the service name. This means that short-links may not work!
+## Services sur Liste Blanche
+
+Les services listés ci-dessous sont intrinsèquement dignes de confiance et sont autorisés avec notre liste blanche d'URL par défaut. La ressource accédée (c'est-à-dire l'URL que vous entrez/utilisez dans le lecteur vidéo) doit résider dans le service de domaine listé à côté du nom du service. Cela signifie que les réducteur d'URL peuvent ne pas fonctionner !
 
 :::note
 
-*The listings below do not constitute partnerships or endorsements and may change at any time without notice*.
+*Le listage ci-dessous ne constitue pas des partenariats ou des endossements et peut changer à tout moments sans préavis*.
 :::
 
-| Service | Domain |
+| Service | Domaine |
 | --- | --- |
 | --- | --- |
 | Soundcloud | `soundcloud.com` |
