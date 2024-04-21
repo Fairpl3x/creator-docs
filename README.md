@@ -1,23 +1,17 @@
-This repo holds the source for the VRChat Creator Docs!
+# VRChat Creator Docs + i18n
 
-![image](https://github.com/vrchat-community/creator-docs/assets/737888/0d5f6c1f-3c47-4a5d-8f2f-6207a7b33deb)
+## What is this?
+This repository is a fork of the **VRChat Creator Docs** with integrated i18n support in the Docusaurus docs. This integration enables localization, making it possible to have VRChat Docs available in multiple languages.
 
-## Suggesting Edits
+*Dropdown with locales*  
+![Screenshot_1](https://github.com/FairplexVR/creator-docs-i18n/assets/31825109/df0ad5fc-536e-428b-b95f-4f4d86e43a7c)  
 
-To suggest an edit to an existing page, you can use the "Edit this page" link at the bottom of most pages on the site. 
+This project is done independently and is not affiliated with VRChat. In other words, I'm working on this in my free time, without expecting VRChat to endorse these changes. My hope is that it can be of help to those who may not be very comfortable with English.
 
-![Suggesting Edits link](https://github.com/vrchat-community/creator-docs/assets/737888/0dfb0fdd-0bec-4bea-9ceb-9bb752655e6d)
+If you would like to help me translating the doc, most of the pages have an "Edit This Page".  
+More language can be added if enough people are interested to work on specific translations.
 
-GitHub will help you set up a fork of the docs so you can edit them and submit a Pull Request to this repo, to have your changes integrated.
+## Original Version: 
 
-## Local Development
-You can also directly fork this repo to suggest many changes at once.
-1. Fork the repo to your own GitHub account.
-2. Edit the markdown docs on your own machine.
-3. Use Docusaurus to preview the updates if you want!
-
-## Using Docusaurus
-The docs are built with [Docusaurus](https://docusaurus.io/docs/), so you can run a local server to see what your changes will look like very quickly.
-1. Clone the repo (or your fork).
-2. Run `npm install` in the `Docs` folder to install the required packages.
-3. Run `npm run start` in the `Docs` folder to run the Docusaurus server, which will build the site and open a browser pointing to a local server with your live preview. Just change a page or add a new one, and the server will hot-reload the content so you can see it right away.
+### [English](https://fairplexvr.github.io/creator-docs-i18n/)
+- This is the base made by VRChat, original and unmodified. It will be used as a reference for other translations in this repo. **Don't suggest edits** on this one here. If you would like to suggest changes in the official Creator Doc, please use [VRChat Repo](https://github.com/vrchat-community/creator-docs) instead.
