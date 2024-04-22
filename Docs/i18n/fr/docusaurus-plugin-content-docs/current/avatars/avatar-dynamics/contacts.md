@@ -18,7 +18,6 @@ Le composant Contact Sender définit un volume qui enverra un signal de contact 
 - `Root Transform` - Le Transform où ce contact est placé. Si vide, nous utilisons le Transform de cet objet.
 
 ### Shape
-
 Cette section contient les paramètres qui définissent la forme du Contact Sender.
 
 - `Shape Type` - Type de forme de collision utilisé par ce contact. Vous pouvez choisir entre une sphère et une capsule.
@@ -28,7 +27,6 @@ Cette section contient les paramètres qui définissent la forme du Contact Send
 - `Rotation` - Décalage de rotation par rapport au Transform de base.
 
 ### Filtering
-
 Cette section contient les paramètres qui vous autorisent à ajuster et à définir comment ce Contact Sender va interagir avec le [Contact Receiver](/avatars/avatar-dynamics/contacts/#vrccontactreceiver).
 
 - `Collision Tags` - Liste de chaînes qui spécifie ce qu'elle peut affecter, ou par quoi elle est affectée. Pour qu'une collision réussisse, l'émetteur ainsi que le récepteur doivent tous les deux posséder au moins une paire de chaînes correspondante.
@@ -37,7 +35,6 @@ Comme exemple, les Tags ci-dessous vont entraîner le Sender à envoyer un signa
 ![contacts-de34d55-2022-04-19_11-53-34_NVIDIA_Share.png](/img/avatars/contacts-de34d55-2022-04-19_11-53-34_NVIDIA_Share.png)
 
 ## Colliders Standards
-
 Un ensemble de Colliders standards sont définis dans l'Avatar Descriptor, dans une nouvelle section appelée "Colliders". Cette section vous laisse définir un nombre de Colliders standards qui existent sur chaque avatar.
 
 - Head (Tête)
@@ -53,13 +50,11 @@ Un ensemble de Colliders standards sont définis dans l'Avatar Descriptor, dans 
 Ces Colliders agissent premièrement comme des Contact Senders que les autres personnes peuvent détecter avec leurs avatars. Cependant, les Colliders des doigts et de la main sont aussi utilisés pour créer des Colliders [PhysBone](/avatars/avatar-dynamics/physbones) globaux qui peuvent être utilisés pour affecter les PhysBones des autres personnes.
 
 ## VRCContactReceiver
-
 Le composant Contact Receiver défini un volume qui va recevoir un signal de Contact sur un contact avec un Contact Sender. Il va ensuite définir un [Animator Parameter](/avatars/animator-parameters) d'une certaine manière, tel que défini par l'utilisateur.
 ![contacts-6f84ac4-2022-04-19_11-57-25_NVIDIA_Share.png](/img/avatars/contacts-6f84ac4-2022-04-19_11-57-25_NVIDIA_Share.png)
 - `Root Transform` - Transform où est placé ce contact. Si vide, on utilise le Transform de cet objet.
 
 ### Shape
-
 Cette section contient des paramètres qui définissent la forme du Contact Receiver.
 
 - `Shape Type` - Type de forme de collision utilisé par ce contact.
@@ -70,7 +65,6 @@ Cette section contient des paramètres qui définissent la forme du Contact Rece
 - `Collision Tags` - Liste de chaînes qui spécifie ce qu'elle peut affecter, ou par quoi elle est affectée. Pour qu'une collision réussisse, l'émetteur ainsi que le récepteur doivent tous les deux posséder au moins une paire de chaînes correspondante. Les Tags de collision sont sensibles à la case.
 
 ### Filtering
-
 Cette section contient des paramètres qui vous permettent d'ajuster et de définir comment ce Contact Receiver va interagir avec des [ContactSenders](/avatars/avatar-dynamics/contacts#VRCContactSender).
 
 - `Allow Self` - Autorise ce contact à être affecté par vous-même.
@@ -79,7 +73,6 @@ Cette section contient des paramètres qui vous permettent d'ajuster et de défi
 - `Collision Tags` - Liste de chaînes qui spécifie ce qu'elle peut affecter, ou par quoi elle est affectée. Pour qu'une collision réussisse, l'émetteur ainsi que le récepteur doivent tous les deux posséder au moins une paire de chaînes correspondante. Les Tags de collision sont sensibles à la case.
 
 ### Receiver
-
 Cette section contient des paramètres qui définissent ce que fait le Receiver quand il reçoit un signal.
 
 `Receiver Type` défini le comportement du réglage du paramètre quand un signal et reçu.
@@ -88,7 +81,6 @@ Cette section contient des paramètres qui définissent ce que fait le Receiver 
 - `Proximity` - Vous donne une valeur Float entre `0.0-1.0` en fonction de la proximité d'un contact avec le centre du déclencheur. Ceci est calculé comme le point le plus proche de l'émetteur à l'intérieur du récepteur. Vous devez utiliser un Float. Si plusieurs contacts sont détectés, il vous retournera le plus proche.
 
 :::note
-
 Si vous voulez avoir une mesure de proximité plus précise, vous devez ajuster le rayon de l'émetteur pour qu'il soit très petit.
 :::
 
