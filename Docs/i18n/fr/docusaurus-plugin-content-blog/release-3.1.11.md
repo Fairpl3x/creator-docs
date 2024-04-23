@@ -6,6 +6,10 @@ authors: [momo]
 tags: [release]
 draft: false
 ---
+
+:::warning Traduction incomplète !
+:::
+
 Starting with this version, we will no longer be releasing the legacy `.unitypackage` files that extract into your `Assets` folder. This page will serve as a changelog for the SDK moving forward!
 
 ### Résumé

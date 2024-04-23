@@ -6,6 +6,10 @@ authors: [momo]
 tags: [release]
 draft: false
 ---
+
+:::warning Traduction incomplète !
+:::
+
 ### Résumé
 
 This release reworks the main user interface for the VRChat SDK (the 'Build panel'). It includes a new UI, quality-of-life improvements, and easier ways to build and update your content.

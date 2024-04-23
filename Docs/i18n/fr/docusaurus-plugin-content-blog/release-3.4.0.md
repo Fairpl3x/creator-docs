@@ -6,6 +6,10 @@ authors: [momo]
 tags: [release]
 draft: false
 ---
+
+:::warning Traduction incomplète !
+:::
+
 ## Résumé
 
 This update merges the ClientSim and UdonSharp packages into the Worlds package so they will be available in all projects moving forward. It also updates the Content Tags available in the Build panel to support the new [Content Gating system](https://hello.vrchat.com/blog/content-gating).

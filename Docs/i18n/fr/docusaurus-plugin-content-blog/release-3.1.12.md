@@ -6,6 +6,10 @@ authors: [momo]
 tags: [release]
 draft: false
 ---
+
+:::warning Traduction incomplète !
+:::
+
 ### Résumé
 
 New VRCGraphics features for Udon, new avatar performance metrics, and bug fixes. Now up-to-date with VRChat 2023.1.2p4.

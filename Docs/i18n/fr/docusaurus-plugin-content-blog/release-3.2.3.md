@@ -6,6 +6,10 @@ authors: [momo]
 tags: [release]
 draft: false
 ---
+
+:::warning Traduction incomplète !
+:::
+
 ### Résumé
 
 Adds "interaction passthrough" to the World Descriptor and fixes a bug in the Avatar Scaling Example Graph.

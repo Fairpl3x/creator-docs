@@ -6,6 +6,10 @@ authors: [momo]
 tags: [release]
 draft: false
 ---
+
+:::warning Traduction incomplète !
+:::
+
 ## Résumé
 
 Cette mise à jour résout les problèmes post-3.4.0 et apporte des améliorations mineures de l'utilisation du SDK.

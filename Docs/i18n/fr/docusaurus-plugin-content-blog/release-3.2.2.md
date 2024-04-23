@@ -6,6 +6,10 @@ authors: [momo]
 tags: [release]
 draft: false
 ---
+
+:::warning Traduction incomplète !
+:::
+
 ### Résumé
 
 Adds Udon support for Avatar Scaling (along with an Udon Example) and enforces new Avatar Dynamic Component limits.

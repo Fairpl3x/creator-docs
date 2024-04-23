@@ -6,6 +6,10 @@ authors: [momo]
 tags: [release]
 draft: false
 ---
+
+:::warning Traduction incomplète !
+:::
+
 ## Résumé
 
 Cette mise à jour règle un problème où les anciens dossiers n'étaient pas enlevés lors de la migration d'un projet qui utilisait les Assets basés sur l'ancien SDK.

@@ -6,6 +6,10 @@ authors: [momo]
 tags: [release]
 draft: false
 ---
+
+:::warning Traduction incomplète !
+:::
+
 ## Résumé
 
 C'est le tout premier SDK qui fonctionne avec Unity 2022 !

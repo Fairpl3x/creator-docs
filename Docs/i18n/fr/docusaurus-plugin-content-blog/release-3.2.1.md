@@ -6,6 +6,10 @@ authors: [momo]
 tags: [release]
 draft: false
 ---
+
+:::warning Traduction incomplète !
+:::
+
 ### Résumé
 
 Small fixes for Midi, PhysBones, and Udon's interaction with Blocked Users and Stations. Updates Newtonsoft Dependency to 3.0.2.

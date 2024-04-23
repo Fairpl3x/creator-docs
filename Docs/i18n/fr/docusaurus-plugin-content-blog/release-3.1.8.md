@@ -6,6 +6,10 @@ authors: [momo]
 tags: [release]
 draft: false
 ---
+
+:::tip Traduction complète !
+:::
+
 ### Résumé
 
 Ajoute de nouveaux Shader Globals et méthodes VRCGraphics
