@@ -13,9 +13,9 @@
         <link href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-5-2"/>
         <updated>2024-03-27T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Summary]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="summary">Summary<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-5-2#summary" class="hash-link" aria-label="Lien direct vers Summary" title="Lien direct vers Summary">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="summary">Summary<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-5-2#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h2>
 <p>This release brings new functionality for avatar creators and various fixes.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="new-features">New features<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-5-2#new-features" class="hash-link" aria-label="Lien direct vers New features" title="Lien direct vers New features">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="new-features">New features<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-5-2#new-features" class="hash-link" aria-label="Direct link to New features" title="Direct link to New features">​</a></h2>
 <ul>
 <li>Added the <a href="https://fairplexvr.github.io/creator-docs-i18n/avatars/whitelisted-avatar-components/vrc_headchop/"><code>VRCHeadChop</code> component</a> to the avatars SDK.<!-- -->
 <ul>
@@ -30,7 +30,7 @@
 </li>
 <li>Added new <a href="https://fairplexvr.github.io/creator-docs-i18n/worlds/udon/input-events/#oninputmethodchanged"><code>OnInputMethodChanged</code> Event to Udon</a>, which is triggered whenever the user switches Input Methods, from a Keyboard to a Game Controller, or a Game Controller to a Touchscreen, for example.</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changes">Changes<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-5-2#changes" class="hash-link" aria-label="Lien direct vers Changes" title="Lien direct vers Changes">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changes">Changes<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-5-2#changes" class="hash-link" aria-label="Direct link to Changes" title="Direct link to Changes">​</a></h2>
 <ul>
 <li>The worlds SDK will now suggest replacing Unity's default UI shader with a <a href="https://fairplexvr.github.io/creator-docs-i18n/platforms/android/quest-content-limitations/#shaders">super-sampled shader</a> where appropriate.<!-- -->
 <ul>
@@ -47,21 +47,21 @@
 <li>Added <a href="https://fairplexvr.github.io/creator-docs-i18n/worlds/udon/string-loading/">ResultBytes field to string downloader event</a> to allow raw data downloads.</li>
 <li>The avatars SDK now warns against using <a href="https://fairplexvr.github.io/creator-docs-i18n/avatars/#write-defaults-on-states"><em>mixed</em> Write Defaults settings</a> across avatar animators.</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="fixes">Fixes<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-5-2#fixes" class="hash-link" aria-label="Lien direct vers Fixes" title="Lien direct vers Fixes">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="fixes">Fixes<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-5-2#fixes" class="hash-link" aria-label="Direct link to Fixes" title="Direct link to Fixes">​</a></h2>
 <ul>
 <li>If an Udon script uses <code>[RequireComponent]</code>, the SDK will now silence some harmless errors while building.</li>
 <li>Updated <code>UnityEngine.Timeline</code> package version &amp; added to base SDK package dependencies.</li>
 <li>Changed "Polygons" to "Triangles" in SDK avatar performance stats for a more accurate description of recommended limits.</li>
 <li>Fixed issues with <code>InputUse</code> Udon events firing constantly when using VRChat Mobile. They should now only fire when a genuine tap is done, not while swiping or long-pressing.</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="clientsim">ClientSim<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-5-2#clientsim" class="hash-link" aria-label="Lien direct vers ClientSim" title="Lien direct vers ClientSim">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="clientsim">ClientSim<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-5-2#clientsim" class="hash-link" aria-label="Direct link to ClientSim" title="Direct link to ClientSim">​</a></h2>
 <ul>
 <li>Added <a href="https://fairplexvr.github.io/creator-docs-i18n/worlds/udon/players/#language">all languages supported by VRChat</a>.</li>
 <li>Added support for <a href="https://fairplexvr.github.io/creator-docs-i18n/worlds/udon/players/player-avatar-scaling/">player scaling APIs</a>.</li>
 <li>Fixed EditorOnly objects not getting removed in Play Mode.</li>
 <li>The stacked camera is now enabled/disabled depending on the state of the pause menu to improve performance.</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="known-issues">Known Issues<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-5-2#known-issues" class="hash-link" aria-label="Lien direct vers Known Issues" title="Lien direct vers Known Issues">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="known-issues">Known Issues<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-5-2#known-issues" class="hash-link" aria-label="Direct link to Known Issues" title="Direct link to Known Issues">​</a></h2>
 <ul>
 <li>The first time you open a Scene and select a GameObject inside a prefab with a U# Behaviour, the GUI for the component directly below that U# Behaviour will not show its GUI. Deselecting and re-selecting the prefab fixes this.</li>
 <li>Buffer Particles don't work as they did in Unity 2019, <a href="https://x.com/hfcRedddd/status/1696915379090604179" target="_blank" rel="noopener noreferrer">there is a workaround to fix them from community member hfcRed here</a>.</li>
@@ -84,9 +84,9 @@
         <link href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-5-1"/>
         <updated>2024-02-20T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Summary]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="summary">Summary<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-5-1#summary" class="hash-link" aria-label="Lien direct vers Summary" title="Lien direct vers Summary">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="summary">Summary<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-5-1#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h2>
 <p>This release contains multiple Unity 2022 follow-up fixes and overall quality-of-life improvements.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="new-features">New features<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-5-1#new-features" class="hash-link" aria-label="Lien direct vers New features" title="Lien direct vers New features">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="new-features">New features<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-5-1#new-features" class="hash-link" aria-label="Direct link to New features" title="Direct link to New features">​</a></h2>
 <ul>
 <li>New methods have been added to the Worlds SDK. These methods were previously only available to Creator Economy sellers but can now be used by all world creators.<!-- -->
 <ul>
@@ -101,18 +101,18 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changes">Changes<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-5-1#changes" class="hash-link" aria-label="Lien direct vers Changes" title="Lien direct vers Changes">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changes">Changes<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-5-1#changes" class="hash-link" aria-label="Direct link to Changes" title="Direct link to Changes">​</a></h2>
 <ul>
 <li>The VRChat SDK now automatically enables "Clamp BlendShape Weights" option in VRChat projects. This mirrors VRChat Client behaviour and prevents BlendShapes from moving beyond their maximum (100) offset.</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="fixes">Fixes<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-5-1#fixes" class="hash-link" aria-label="Lien direct vers Fixes" title="Lien direct vers Fixes">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="fixes">Fixes<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-5-1#fixes" class="hash-link" aria-label="Direct link to Fixes" title="Direct link to Fixes">​</a></h2>
 <ul>
 <li>Fixed spatialized audio sources creating warnings when entering play mode or adjusting their settings. Users might be prompted to restart their editor when adding the 3.5.1 SDK for the first time.</li>
 <li>Fixed upload speed increase logic breaking on macOS/Linux, preventing users from uploading.</li>
 <li>Fixed an issue where the SDK would not detect if the blueprint ID of a world / avatar is taken by another user or invalid, and attempt to upload a new world / avatar to that ID. That would result in an "Application Error" message. The blueprint ID is now cleared correctly in this case.</li>
 <li>Fixed an issue where builds that went above the upload limit, e.g. 10 MB for Android Avatars, reported the size incorrectly. The SDK now correctly shows all the decimal points for the size. You should no longer see error messages like "10.00 MB &gt; 10.00 MB".</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="known-issues">Known Issues<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-5-1#known-issues" class="hash-link" aria-label="Lien direct vers Known Issues" title="Lien direct vers Known Issues">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="known-issues">Known Issues<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-5-1#known-issues" class="hash-link" aria-label="Direct link to Known Issues" title="Direct link to Known Issues">​</a></h2>
 <ul>
 <li>The first time you open a Scene and select a GameObject inside a prefab with a U# Behaviour, the GUI for the component directly below that U# Behaviour will not show its GUI. Deselecting and re-selecting the prefab fixes this.</li>
 <li>Buffer Particles don't work as they did in Unity 2019, <a href="https://x.com/hfcRedddd/status/1696915379090604179" target="_blank" rel="noopener noreferrer">there is a workaround to fix them from community member hfcRed here</a>.</li>
@@ -130,37 +130,38 @@
         <category label="release" term="release"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Version 3.5.0]]></title>
+        <title type="html"><![CDATA[Release 3.5.0]]></title>
         <id>https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-5-0</id>
         <link href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-5-0"/>
         <updated>2023-12-08T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Résumé]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="résumé">Résumé<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-5-0#r%C3%A9sum%C3%A9" class="hash-link" aria-label="Lien direct vers Résumé" title="Lien direct vers Résumé">​</a></h2>
-<p>C'est le tout premier SDK qui fonctionne avec Unity 2022 !</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="notes-sur-lutilisation">Notes sur l'Utilisation<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-5-0#notes-sur-lutilisation" class="hash-link" aria-label="Lien direct vers Notes sur l'Utilisation" title="Lien direct vers Notes sur l'Utilisation">​</a></h2>
-<p>Vous aurez besoin de mettre à jour votre Creator Companion à la version 2.2.0 afin de pouvoir gérer l'éditeur Unity 2022 pour créer des projets compatibles Unity 2022. Vous pouvez vérifier votre version actuelle en cliquant sur "Settings", puis en regardant dans le coins supérieur droit.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="nouvelles-fonctionnalités">Nouvelles Fonctionnalités<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-5-0#nouvelles-fonctionnalit%C3%A9s" class="hash-link" aria-label="Lien direct vers Nouvelles Fonctionnalités" title="Lien direct vers Nouvelles Fonctionnalités">​</a></h2>
+        <summary type="html"><![CDATA[Summary]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="summary">Summary<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-5-0#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h2>
+<p>This is the first SDK that works with Unity 2022!</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="notes-on-usage">Notes on Usage<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-5-0#notes-on-usage" class="hash-link" aria-label="Direct link to Notes on Usage" title="Direct link to Notes on Usage">​</a></h2>
+<p>You will need to update your Creator Companion to version 2.2.0 in order to manage the 2022-based Unity Editor and make 2022-compatible projects. You can check your current version by clicking on "Settings" and looking in the upper-right corner.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="new-features">New Features<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-5-0#new-features" class="hash-link" aria-label="Direct link to New Features" title="Direct link to New Features">​</a></h2>
 <ul>
-<li>Il y a une nouvelle "Scène par Défaut VRChat" que vous pouvez choisir lors de la création d'une nouvelle scène avec tout les éléments de base nécessaires pour un monde VRChat.</li>
-<li><code>OnScreenUpdateEvent</code> est un nouvelle événement déclenché dans Udon lorsque un utilisateur visite depuis un appareil mobile. Il contient des informations sur l'Orientation et la Résolution de l'écran lorsque qu'il entre dans un monde, ou à chaque fois que l'Orientation de leur appareil change.</li>
+<li>There is a new "Default VRChat Scene" that you can choose when making a new scene which has all the basics needed for a VRChat World.</li>
+<li><code>OnScreenUpdateEvent</code> is a new event triggered in Udon when a player visits on a mobile device. It contains information about the Orientation and Resolution of the screen when they first enter the world, and whenever the Orientation of their device changes.</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changements">Changements<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-5-0#changements" class="hash-link" aria-label="Lien direct vers Changements" title="Lien direct vers Changements">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changes">Changes<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-5-0#changes" class="hash-link" aria-label="Direct link to Changes" title="Direct link to Changes">​</a></h2>
 <ul>
-<li>Passe de .NET Framework 4.x à .NET Standard 2.1.</li>
-<li>Restaure les exemples UdonSharp, désormais répertoriés sous World Samples.</li>
-<li>Restaure les anciens fichiers d'UdonSharp et de ClientSim.</li>
+<li>Switches from .NET Framework 4.x to .NET Standard 2.1.</li>
+<li>Restores UdonSharp Samples, now  listed under World Samples.</li>
+<li>Restores UdonSharp and ClientSim legacyFiles.</li>
+<li>Now you can add <a href="https://fairplexvr.github.io/creator-docs-i18n/avatars/avatar-impostors/#vrcimpostorsettings">VRC Impostor Settings</a> Component!</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="problèmes-connus">Problèmes Connus<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-5-0#probl%C3%A8mes-connus" class="hash-link" aria-label="Lien direct vers Problèmes Connus" title="Lien direct vers Problèmes Connus">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="known-issues">Known Issues<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-5-0#known-issues" class="hash-link" aria-label="Direct link to Known Issues" title="Direct link to Known Issues">​</a></h2>
 <ul>
-<li>La première fois que vous ouvrez une Scène et sélectionnez un GameObject dans un prefab avec un U# Behaviour, l'interface graphique pour le composant situé directement au dessous du U# Behaviour n'affichera pas son interface graphique. Désélectionner et re-sélectionner le prefab règle cela.</li>
-<li>les particules tampons (Buffer Particles) ne fonctionne pas comme elles le faisait dans Unity 2019, <a href="https://x.com/hfcRedddd/status/1696915379090604179" target="_blank" rel="noopener noreferrer">il y a une solution de contournement pour les réparer, par hfcRed, un membre de la communauté, ici</a>.</li>
-<li>L'editor peut planter si on met à jour une référence d'un shader graph avec un autre shader en utilisant UsePass. C'est une problème avec Unity 2022.3.6f1 et c'est réglé dans Unity 2022.3.14f1.</li>
-<li>Unity 2022 cause parfois un l'arrêt du debugger de Rider pour une exceptions non gérée dans l'IMGUI d'Unity.<!-- -->
+<li>The first time you open a Scene and select a GameObject inside a prefab with a U# Behaviour, the GUI for the component directly below that U# Behaviour will not show its GUI. Deselecting and re-selecting the prefab fixes this.</li>
+<li>Buffer Particles don't work as they did in Unity 2019, <a href="https://x.com/hfcRedddd/status/1696915379090604179" target="_blank" rel="noopener noreferrer">there is a workaround to fix them from community member hfcRed here</a>.</li>
+<li>The Editor may crash when updating a shader graph reference by another shader using UsePass. This is an issue with Unity 2022.3.6f1 and is fixed in 2022.3.14f1.</li>
+<li>Unity 2022 sometimes causes Rider's debugger to stop for unhandled exceptions in Unity's IMGUI.<!-- -->
 <ul>
-<li>Veuillez vous référer à <a href="https://forum.unity.com/threads/rider-debugger-breaks-on-unhandled-exception.1135879/#post-7305256" target="_blank" rel="noopener noreferrer">cette solution de contournement</a> et au <a href="https://youtrack.jetbrains.com/issue/RIDER-64944" target="_blank" rel="noopener noreferrer">bug tracker de Jetbrains</a> pour plus d'information.</li>
+<li>Please refer to <a href="https://forum.unity.com/threads/rider-debugger-breaks-on-unhandled-exception.1135879/#post-7305256" target="_blank" rel="noopener noreferrer">this workaround</a> and <a href="https://youtrack.jetbrains.com/issue/RIDER-64944" target="_blank" rel="noopener noreferrer">Jetbrains's bug tracker</a> for more information.</li>
 </ul>
 </li>
-<li>Les Audio Sources spatialisées peuvent créer des avertissements en entrant en mode Play, ou en ajustant leur paramètres.</li>
+<li>Spatialized Audio Sources can create warnings when entering playmode or adjusting their settings.</li>
 </ul>]]></content>
         <author>
             <name>Momo the Monster</name>
@@ -169,16 +170,16 @@
         <category label="release" term="release"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Version 3.4.2]]></title>
+        <title type="html"><![CDATA[Release 3.4.2]]></title>
         <id>https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-4-2</id>
         <link href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-4-2"/>
         <updated>2023-12-05T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Résumé]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="résumé">Résumé<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-4-2#r%C3%A9sum%C3%A9" class="hash-link" aria-label="Lien direct vers Résumé" title="Lien direct vers Résumé">​</a></h2>
-<p>Cette mise à jour règle un problème où les anciens dossiers n'étaient pas enlevés lors de la migration d'un projet qui utilisait les Assets basés sur l'ancien SDK.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changements">Changements<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-4-2#changements" class="hash-link" aria-label="Lien direct vers Changements" title="Lien direct vers Changements">​</a></h2>
+        <summary type="html"><![CDATA[Summary]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="summary">Summary<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-4-2#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h2>
+<p>This update fixes an issue where legacy folders were not removed as part of migrating a project which used the old Assets-based SDK.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changes">Changes<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-4-2#changes" class="hash-link" aria-label="Direct link to Changes" title="Direct link to Changes">​</a></h2>
 <ul>
-<li>Ajoute tous les 'legacyFolders' des packages d'UdonSharp et de ClientSim dans le package Worlds.</li>
+<li>Adds all the 'legacyFolders' from the UdonSharp and ClientSim packages into the Worlds package.</li>
 </ul>]]></content>
         <author>
             <name>Momo the Monster</name>
@@ -187,19 +188,19 @@
         <category label="release" term="release"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Version 3.4.1]]></title>
+        <title type="html"><![CDATA[Release 3.4.1]]></title>
         <id>https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-4-1</id>
         <link href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-4-1"/>
         <updated>2023-10-13T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Résumé]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="résumé">Résumé<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-4-1#r%C3%A9sum%C3%A9" class="hash-link" aria-label="Lien direct vers Résumé" title="Lien direct vers Résumé">​</a></h2>
-<p>Cette mise à jour résout les problèmes post-3.4.0 et apporte des améliorations mineures de l'utilisation du SDK.</p>
-<div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>attention</div><div class="admonitionContent_BuS1"><p>Assurez-vous de mettre à jour vers <a href="https://vcc.docs.vrchat.com/news/release-2.1.6" target="_blank" rel="noopener noreferrer">Creator Companion 2.1.6</a> ou supérieur avant de passer à cette version du SDK&nbsp;!</p></div></div>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changements">Changements<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-4-1#changements" class="hash-link" aria-label="Lien direct vers Changements" title="Lien direct vers Changements">​</a></h2>
+        <summary type="html"><![CDATA[Summary]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="summary">Summary<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-4-1#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h2>
+<p>This update addresses post-3.4.0 issues and makes minor usability improvements to the SDK.</p>
+<div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>caution</div><div class="admonitionContent_BuS1"><p>Make sure you update to <a href="https://vcc.docs.vrchat.com/news/release-2.1.6" target="_blank" rel="noopener noreferrer">Creator Companion 2.1.6</a> or higher before updating to this version of the SDK!</p></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changes">Changes<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-4-1#changes" class="hash-link" aria-label="Direct link to Changes" title="Direct link to Changes">​</a></h2>
 <ul>
-<li>Résout un problème provoquant l'échec du téléchargement du SDK avec une erreur "Missing Credentials".</li>
-<li>Résout un problème où les avatars sans Animator peuvent casser les messages de validation dans le panneau de construction du SDK. Résout <a href="https://feedback.vrchat.com/sdk-bug-reports/p/add-a-message-to-the-sdk-window-about-missing-animator-component-when-it-is-miss" target="_blank" rel="noopener noreferrer">ce Canny</a>.</li>
-<li>Change l'heure de "Last Updated" pour afficher l'heure locale au lieu de l'UTC. Résout <a href="https://feedback.vrchat.com/sdk-bug-reports/p/label-last-updated-date-and-time-in-upload-panel-as-utc" target="_blank" rel="noopener noreferrer">ce Canny</a>.</li>
+<li>Fixes an issue causing the SDK to fail to upload with a "Missing Credentials" error.</li>
+<li>Fixes an issue where avatars without Animators would break the validation messages in the SDK Builder Panel. Addresses <a href="https://feedback.vrchat.com/sdk-bug-reports/p/add-a-message-to-the-sdk-window-about-missing-animator-component-when-it-is-miss" target="_blank" rel="noopener noreferrer">this Canny</a>.</li>
+<li>Changes "Last Updated" time to show Local Time instead of UTC. Addresses <a href="https://feedback.vrchat.com/sdk-bug-reports/p/label-last-updated-date-and-time-in-upload-panel-as-utc" target="_blank" rel="noopener noreferrer">this Canny</a>.</li>
 </ul>]]></content>
         <author>
             <name>Momo the Monster</name>
@@ -208,15 +209,15 @@
         <category label="release" term="release"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Version 3.4.0]]></title>
+        <title type="html"><![CDATA[Release 3.4.0]]></title>
         <id>https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-4-0</id>
         <link href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-4-0"/>
         <updated>2023-10-04T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Résumé]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="résumé">Résumé<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-4-0#r%C3%A9sum%C3%A9" class="hash-link" aria-label="Lien direct vers Résumé" title="Lien direct vers Résumé">​</a></h2>
+        <summary type="html"><![CDATA[Summary]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="summary">Summary<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-4-0#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h2>
 <p>This update merges the ClientSim and UdonSharp packages into the Worlds package so they will be available in all projects moving forward. It also updates the Content Tags available in the Build panel to support the new <a href="https://hello.vrchat.com/blog/content-gating" target="_blank" rel="noopener noreferrer">Content Gating system</a>.</p>
-<div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>attention</div><div class="admonitionContent_BuS1"><p>Make sure you update to <a href="https://vcc.docs.vrchat.com/news/release-2.1.6" target="_blank" rel="noopener noreferrer">Creator Companion 2.1.6</a> or higher before updating to this version of the SDK!</p></div></div>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changements">Changements<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-4-0#changements" class="hash-link" aria-label="Lien direct vers Changements" title="Lien direct vers Changements">​</a></h2>
+<div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>caution</div><div class="admonitionContent_BuS1"><p>Make sure you update to <a href="https://vcc.docs.vrchat.com/news/release-2.1.6" target="_blank" rel="noopener noreferrer">Creator Companion 2.1.6</a> or higher before updating to this version of the SDK!</p></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="changes">Changes<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-4-0#changes" class="hash-link" aria-label="Direct link to Changes" title="Direct link to Changes">​</a></h2>
 <ul>
 <li>UdonSharp and ClientSim are now both included in the Worlds package within the "Integrations" folder.</li>
 <li>UdonSharp and ClientSim added as "legacyPackages" in the Worlds package manifest to have the Creator Companion and Resolver properly remove them.</li>
@@ -233,15 +234,15 @@
         <category label="release" term="release"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Version 3.3.0]]></title>
+        <title type="html"><![CDATA[Release 3.3.0]]></title>
         <id>https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-3-0</id>
         <link href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-3-0"/>
         <updated>2023-09-11T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Résumé]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="résumé">Résumé<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-3-0#r%C3%A9sum%C3%A9" class="hash-link" aria-label="Lien direct vers Résumé" title="Lien direct vers Résumé">​</a></h3>
+        <summary type="html"><![CDATA[Summary]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="summary">Summary<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-3-0#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h3>
 <p>This release reworks the main user interface for the VRChat SDK (the 'Build panel'). It includes a new UI, quality-of-life improvements, and easier ways to build and update your content.</p>
 <p>This update also adds support for the new 'Maximum capacity' and 'Recommended capacity' settings for worlds. You can learn more about these settings <a href="https://fairplexvr.github.io/creator-docs-i18n/worlds/creating-your-first-world/#step-5---building-your-world">in our documentation</a>.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="changements">Changements<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-3-0#changements" class="hash-link" aria-label="Lien direct vers Changements" title="Lien direct vers Changements">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="changes">Changes<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-3-0#changes" class="hash-link" aria-label="Direct link to Changes" title="Direct link to Changes">​</a></h3>
 <ul>
 <li>Fully rebuilt the SDK Builder panel with new UI and features</li>
 <li>Uploading Worlds and Avatars no longer requires entering Play Mode</li>
@@ -250,8 +251,13 @@
 <li>Standardized public API has been added for tool developers</li>
 <li>Content Manager now marks the currently selected world and allows quickly setting any uploaded world as current</li>
 <li>Countless bug fixes and improvements across Worlds and Avatars SDKs</li>
+<li>Adds the <a href="https://fairplexvr.github.io/creator-docs-i18n/avatars/avatar-impostors/#vrcimpostorsettings">VRC Impostor Settings</a> component to the avatars SDK.<!-- -->
+<ul>
+<li>However, you cannot attach this component manually for now.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="important-note-for-tool-developers">Important note for Tool Developers<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-3-0#important-note-for-tool-developers" class="hash-link" aria-label="Lien direct vers Important note for Tool Developers" title="Lien direct vers Important note for Tool Developers">​</a></h3>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="important-note-for-tool-developers">Important note for Tool Developers<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-3-0#important-note-for-tool-developers" class="hash-link" aria-label="Direct link to Important note for Tool Developers" title="Direct link to Important note for Tool Developers">​</a></h3>
 <p>If you're making tools that integrate with VRChat SDK - this is an important release, as it makes quite substantial changes to the SDK internals.</p>
 <p>We now also provide public APIs for you to integrate with, and we highly recommend migrating your tools to utilize them if you were relying on reflection or similar techniques before.</p>
 <p><a href="https://fairplexvr.github.io/creator-docs-i18n/sdk/public-sdk-api/">You can read more about the Public SDK APIs here</a>.</p>]]></content>
@@ -262,14 +268,14 @@
         <category label="release" term="release"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Version 3.2.3]]></title>
+        <title type="html"><![CDATA[Release 3.2.3]]></title>
         <id>https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-3</id>
         <link href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-3"/>
         <updated>2023-08-09T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Résumé]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="résumé">Résumé<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-3#r%C3%A9sum%C3%A9" class="hash-link" aria-label="Lien direct vers Résumé" title="Lien direct vers Résumé">​</a></h3>
+        <summary type="html"><![CDATA[Summary]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="summary">Summary<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-3#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h3>
 <p>Adds "interaction passthrough" to the World Descriptor and fixes a bug in the Avatar Scaling Example Graph.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="changements">Changements<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-3#changements" class="hash-link" aria-label="Lien direct vers Changements" title="Lien direct vers Changements">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="changes">Changes<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-3#changes" class="hash-link" aria-label="Direct link to Changes" title="Direct link to Changes">​</a></h3>
 <ul>
 <li>Added a mask for "interaction passthrough" in the WorldDescriptor, so that world creators can allow interaction and grabs to occur through user defined layers. By default (Nothing) they will use the legacy behaviour, which was to always block interactions and grabs.<!-- -->
 <ul>
@@ -278,7 +284,7 @@
 </li>
 <li>Updates the Avatar Scaling Example Graph to prevent errors when running without ClientSim or when building the world.</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="features">Features<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-3#features" class="hash-link" aria-label="Lien direct vers Features" title="Lien direct vers Features">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="features">Features<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-3#features" class="hash-link" aria-label="Direct link to Features" title="Direct link to Features">​</a></h2>
 <ul>
 <li>Adds <code>VRCPlayerApi.GetAvailableLanguages()</code> and <code>VRCPlayerApi.GetCurrentLanguage()</code>. These methods are 'stubs' for now - providing default values in return rather than pulling the actual values until a future Client release. See <a href="https://creators.vrchat.com/worlds/udon/players/#language" target="_blank" rel="noopener noreferrer">the Language docs</a> for more info.</li>
 </ul>]]></content>
@@ -289,16 +295,16 @@
         <category label="release" term="release"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Version 3.2.2]]></title>
+        <title type="html"><![CDATA[Release 3.2.2]]></title>
         <id>https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-2</id>
         <link href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-2"/>
         <updated>2023-07-31T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Résumé]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="résumé">Résumé<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-2#r%C3%A9sum%C3%A9" class="hash-link" aria-label="Lien direct vers Résumé" title="Lien direct vers Résumé">​</a></h3>
+        <summary type="html"><![CDATA[Summary]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="summary">Summary<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-2#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h3>
 <p>Adds Udon support for Avatar Scaling (along with an Udon Example) and enforces new Avatar Dynamic Component limits.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="requires-resolver-0120">Requires Resolver 0.1.20!<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-2#requires-resolver-0120" class="hash-link" aria-label="Lien direct vers Requires Resolver 0.1.20!" title="Lien direct vers Requires Resolver 0.1.20!">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="requires-resolver-0120">Requires Resolver 0.1.20!<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-2#requires-resolver-0120" class="hash-link" aria-label="Direct link to Requires Resolver 0.1.20!" title="Direct link to Requires Resolver 0.1.20!">​</a></h2>
 <p>You may see warnings or errors about conflicting package versions for Newtonsoft.Json until you update the resolver with the Creator Companion.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="changements">Changements<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-2#changements" class="hash-link" aria-label="Lien direct vers Changements" title="Lien direct vers Changements">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="changes">Changes<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-2#changes" class="hash-link" aria-label="Direct link to Changes" title="Direct link to Changes">​</a></h3>
 <ul>
 <li>Adds <a href="https://fairplexvr.github.io/creator-docs-i18n/worlds/udon/players/player-avatar-scaling/">Player Avatar Scaling</a> and <a href="https://fairplexvr.github.io/creator-docs-i18n/worlds/udon/avatar-events/">Avatar Events</a> to integrate with the new Avatar Scaling system.</li>
 <li>Includes new limits for avatar dynamic components. The SDK will give a build error if you exceed these:<!-- -->
@@ -316,16 +322,16 @@
         <category label="release" term="release"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Version 3.2.1]]></title>
+        <title type="html"><![CDATA[Release 3.2.1]]></title>
         <id>https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-1</id>
         <link href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-1"/>
         <updated>2023-06-12T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Résumé]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="résumé">Résumé<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-1#r%C3%A9sum%C3%A9" class="hash-link" aria-label="Lien direct vers Résumé" title="Lien direct vers Résumé">​</a></h3>
+        <summary type="html"><![CDATA[Summary]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="summary">Summary<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-1#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h3>
 <p>Small fixes for Midi, PhysBones, and Udon's interaction with Blocked Users and Stations. Updates Newtonsoft Dependency to 3.0.2.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="requires-resolver-0120">Requires Resolver 0.1.20!<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-1#requires-resolver-0120" class="hash-link" aria-label="Lien direct vers Requires Resolver 0.1.20!" title="Lien direct vers Requires Resolver 0.1.20!">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="requires-resolver-0120">Requires Resolver 0.1.20!<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-1#requires-resolver-0120" class="hash-link" aria-label="Direct link to Requires Resolver 0.1.20!" title="Direct link to Requires Resolver 0.1.20!">​</a></h2>
 <p>This version of the SDK updates the Newtonsoft package used by the Base SDK as well as the <a href="https://vcc.docs.vrchat.com/vpm/resolver/" target="_blank" rel="noopener noreferrer">Resolver</a>. You may see warnings or errors about conflicting package versions for Newtonsoft.Json until you update the resolver with the Creator Companion.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="changements">Changements<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-1#changements" class="hash-link" aria-label="Lien direct vers Changements" title="Lien direct vers Changements">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="changes">Changes<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-1#changes" class="hash-link" aria-label="Direct link to Changes" title="Direct link to Changes">​</a></h3>
 <ul>
 <li>A few MIDI input timing fixes, including improved note processing, more consistent looping, and fixed Note On events with a velocity of '0' turning into Note Off events, which broke MIDI file parsing.</li>
 <li>Scaling PhysBones to zero or very small values and back no longer breaks behavior</li>
@@ -340,14 +346,14 @@
         <category label="release" term="release"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Version 3.2.0]]></title>
+        <title type="html"><![CDATA[Release 3.2.0]]></title>
         <id>https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-0</id>
         <link href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-0"/>
         <updated>2023-05-03T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Résumé]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="résumé">Résumé<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-0#r%C3%A9sum%C3%A9" class="hash-link" aria-label="Lien direct vers Résumé" title="Lien direct vers Résumé">​</a></h3>
+        <summary type="html"><![CDATA[Summary]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="summary">Summary<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-0#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h3>
 <p>Adds DataContainers, PhysBones 1.1 ('Squishy PhysBones'), AsyncGPUReadback, and more.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="features">Features<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-0#features" class="hash-link" aria-label="Lien direct vers Features" title="Lien direct vers Features">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="features">Features<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-0#features" class="hash-link" aria-label="Direct link to Features" title="Direct link to Features">​</a></h3>
 <ul>
 <li>
 <p><strong>DataContainers!</strong> Lists, Dictionaries and JSON for Udon!</p>
@@ -370,7 +376,7 @@
 </ul>
 </li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="improvements">Improvements<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-0#improvements" class="hash-link" aria-label="Lien direct vers Improvements" title="Lien direct vers Improvements">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="improvements">Improvements<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-0#improvements" class="hash-link" aria-label="Direct link to Improvements" title="Direct link to Improvements">​</a></h3>
 <ul>
 <li><strong>Squishy PhysBones!</strong> You can now implement PhysBones that can "squish" or compress instead of stretch!<!-- -->
 <ul>
@@ -416,7 +422,7 @@
 </ul>
 </li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="changements-since-320-beta1">Changements since 3.2.0-beta.1<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-0#changements-since-320-beta1" class="hash-link" aria-label="Lien direct vers Changements since 3.2.0-beta.1" title="Lien direct vers Changements since 3.2.0-beta.1">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="changes-since-320-beta1">Changes since 3.2.0-beta.1<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-0#changes-since-320-beta1" class="hash-link" aria-label="Direct link to Changes since 3.2.0-beta.1" title="Direct link to Changes since 3.2.0-beta.1">​</a></h3>
 <ul>
 <li>Re-added some public methods that got removed, including <code>GetOrAddComponent</code>
 <ul>
@@ -431,9 +437,9 @@
 </li>
 <li>DataContainers: Fixed <code>GetKeys</code> and <code>GetValues</code> returning incorrect values after using <code>Add</code></li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="sdk-api-changes">SDK API Changes<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-0#sdk-api-changes" class="hash-link" aria-label="Lien direct vers SDK API Changes" title="Lien direct vers SDK API Changes">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="sdk-api-changes">SDK API Changes<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-0#sdk-api-changes" class="hash-link" aria-label="Direct link to SDK API Changes" title="Direct link to SDK API Changes">​</a></h3>
 <p>We're working on documenting the "Public API" of the SDK, which will be guaranteed not to change between minor and patch versions. In the meantime, here are things that have changed since 3.1.13:</p>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="extension-methods">Extension Methods<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-0#extension-methods" class="hash-link" aria-label="Lien direct vers Extension Methods" title="Lien direct vers Extension Methods">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="extension-methods">Extension Methods<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-0#extension-methods" class="hash-link" aria-label="Direct link to Extension Methods" title="Direct link to Extension Methods">​</a></h4>
 <p>We've moved some extension methods into the VRC.Core namespace.
 If you're using the <code>Transform.Reset()</code> method, you should instead use <code>VRC.Core.ExtensionMethods.Reset(Transform t)</code>.
 Here are the other similar changes you should make:</p>
@@ -443,9 +449,9 @@ Here are the other similar changes you should make:</p>
 <li><code>GameObject.GetOrAddComponent</code> &gt; <code>VRC.Core.ExtensionMethods.GetOrAddComponent(GameObject go)</code></li>
 <li><code>Type.GetFriendlyGenericTypeName</code> &gt; <code>VRC.Core.ExtensionMethods.GetFriendlyGenericTypeName(Type t, bool includeNamespaces)</code></li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="assembly-move">Assembly Move<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-0#assembly-move" class="hash-link" aria-label="Lien direct vers Assembly Move" title="Lien direct vers Assembly Move">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="assembly-move">Assembly Move<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-0#assembly-move" class="hash-link" aria-label="Direct link to Assembly Move" title="Direct link to Assembly Move">​</a></h4>
 <p>PhysBoneGrabHelper moved assemblies, you may need to reference the <code>VRC.SDK3A</code> assembly now from your code. <a href="https://github.com/BlackStartx/VRC-Gesture-Manager/pull/22" target="_blank" rel="noopener noreferrer">Here is an example fix</a>.</p>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="changements-not-meant-for-public-use">Changements not meant for public use<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-0#changements-not-meant-for-public-use" class="hash-link" aria-label="Lien direct vers Changements not meant for public use" title="Lien direct vers Changements not meant for public use">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="changes-not-meant-for-public-use">Changes not meant for public use<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-2-0#changes-not-meant-for-public-use" class="hash-link" aria-label="Direct link to Changes not meant for public use" title="Direct link to Changes not meant for public use">​</a></h4>
 <p>Additionally, we've made some changes to the following classes, which are <em>not</em> considered part of the Public API for the SDK, and you should move away from using them as soon as possible.
 We will publish a document listing all the exclusions from our SDK before the end of May.</p>
 <ul>
@@ -475,14 +481,14 @@ The UdonManager will have parts that are part of the Public SDK API, but changes
         <category label="release" term="release"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Version 3.1.13]]></title>
+        <title type="html"><![CDATA[Release 3.1.13]]></title>
         <id>https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-13</id>
         <link href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-13"/>
         <updated>2023-03-31T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Résumé]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="résumé">Résumé<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-13#r%C3%A9sum%C3%A9" class="hash-link" aria-label="Lien direct vers Résumé" title="Lien direct vers Résumé">​</a></h3>
+        <summary type="html"><![CDATA[Summary]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="summary">Summary<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-13#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h3>
 <p>Fixes compatibility with Avatars 3.0 Manager.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-13#bug-fixes" class="hash-link" aria-label="Lien direct vers Bug Fixes" title="Lien direct vers Bug Fixes">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-13#bug-fixes" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h3>
 <ul>
 <li>Reverts name of 'hasInitialized' field in VRC_AvatarParameterDriver to 'initialized' to avoid breaking any existing packages which expect this field name.</li>
 </ul>]]></content>
@@ -493,14 +499,14 @@ The UdonManager will have parts that are part of the Public SDK API, but changes
         <category label="release" term="release"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Version 3.1.12]]></title>
+        <title type="html"><![CDATA[Release 3.1.12]]></title>
         <id>https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-12</id>
         <link href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-12"/>
         <updated>2023-03-29T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Résumé]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="résumé">Résumé<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-12#r%C3%A9sum%C3%A9" class="hash-link" aria-label="Lien direct vers Résumé" title="Lien direct vers Résumé">​</a></h3>
+        <summary type="html"><![CDATA[Summary]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="summary">Summary<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-12#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h3>
 <p>New VRCGraphics features for Udon, new avatar performance metrics, and bug fixes. Now up-to-date with VRChat 2023.1.2p4.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="new-features">New Features<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-12#new-features" class="hash-link" aria-label="Lien direct vers New Features" title="Lien direct vers New Features">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="new-features">New Features<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-12#new-features" class="hash-link" aria-label="Direct link to New Features" title="Direct link to New Features">​</a></h3>
 <ul>
 <li>Constraints are now counted in Avatar Stats. They do not currently affect your performance ranking.</li>
 <li>Added support for "VelocityMagnitude" animator property for avatars.</li>
@@ -517,14 +523,14 @@ The UdonManager will have parts that are part of the Public SDK API, but changes
 <li>Added ability to set avatar parameters to not sync, addressing <a href="https://vrchat.canny.io/avatar-30/p/feedback-control-the-not-sync-parameters-from-expressions-menu" target="_blank" rel="noopener noreferrer">Control the not sync parameters from Expressions Menu</a>.</li>
 <li>Udon now has access to temporary RenderTextures as well as constructors for RenderTexture, Texture2D, Texture3D, and Sprite via <a href="https://docs.vrchat.com/docs/vrcgraphics" target="_blank" rel="noopener noreferrer">VRCGraphics</a>.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-12#bug-fixes" class="hash-link" aria-label="Lien direct vers Bug Fixes" title="Lien direct vers Bug Fixes">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-12#bug-fixes" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h3>
 <ul>
 <li>GraphicsSettings are only saved to disk when changes are made, to prevent unnecessary cache busting.</li>
 <li>Fixes issues that could cause jittering in PhysBones when isAnimated was enabled.</li>
 <li>Reconnects to the Creator Companion when the connection is lost.</li>
 <li>Ensures that the UdonEvent is called from the main thread. This avoids unexpected threading errors when the image download fails and the UdonBehaviour tries to use Unity API methods.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="other-changes">Other Changes<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-12#other-changes" class="hash-link" aria-label="Lien direct vers Other Changes" title="Lien direct vers Other Changes">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="other-changes">Other Changes<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-12#other-changes" class="hash-link" aria-label="Direct link to Other Changes" title="Direct link to Other Changes">​</a></h3>
 <ul>
 <li>OnDeserializationResult parameter added to OnDeserialization() method of UdonBehaviours. This enables you to see the time at which this data was sent and received.</li>
 </ul>]]></content>
@@ -535,15 +541,15 @@ The UdonManager will have parts that are part of the Public SDK API, but changes
         <category label="release" term="release"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Version 3.1.11]]></title>
+        <title type="html"><![CDATA[Release 3.1.11]]></title>
         <id>https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-11</id>
         <link href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-11"/>
         <updated>2023-02-16T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Starting with this version, we will no longer be releasing the legacy .unitypackage files that extract into your Assets folder. This page will serve as a changelog for the SDK moving forward!]]></summary>
         <content type="html"><![CDATA[<p>Starting with this version, we will no longer be releasing the legacy <code>.unitypackage</code> files that extract into your <code>Assets</code> folder. This page will serve as a changelog for the SDK moving forward!</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="résumé">Résumé<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-11#r%C3%A9sum%C3%A9" class="hash-link" aria-label="Lien direct vers Résumé" title="Lien direct vers Résumé">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="summary">Summary<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-11#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h3>
 <p>Adds Remote String Loading, Remote Image Loading, MIDI Playback, and Simulation Time!</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="new-features">New Features<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-11#new-features" class="hash-link" aria-label="Lien direct vers New Features" title="Lien direct vers New Features">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="new-features">New Features<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-11#new-features" class="hash-link" aria-label="Direct link to New Features" title="Direct link to New Features">​</a></h3>
 <ul>
 <li>Udon can now <a href="https://docs.vrchat.com/docs/image-loading" target="_blank" rel="noopener noreferrer">load remote images</a>. Closes <a href="https://feedback.vrchat.com/feature-requests/p/hey-when-will-dynamic-image-be-implemented" target="_blank" rel="noopener noreferrer">this Canny</a></li>
 <li>Udon can now <a href="https://docs.vrchat.com/docs/string-loading" target="_blank" rel="noopener noreferrer">load remote strings</a>. Closes <a href="https://feedback.vrchat.com/vrchat-udon-closed-alpha-feedback/p/vrchat-udon-web-api" target="_blank" rel="noopener noreferrer">this Canny</a></li>
@@ -551,7 +557,7 @@ The UdonManager will have parts that are part of the Public SDK API, but changes
 <li>Udon can now access the simulation time of <a href="https://docs.vrchat.com/docs/players#simulationtime" target="_blank" rel="noopener noreferrer">Players</a> and <a href="https://docs.vrchat.com/docs/network-components#networking-properties" target="_blank" rel="noopener noreferrer">GameObjects with networking</a>.</li>
 <li>OnDeserialization now contains DeserializationResult <a href="https://docs.vrchat.com/docs/network-components#ondeserializationdeserializationresult" target="_blank" rel="noopener noreferrer">DeserializationResult</a>.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-11#bug-fixes" class="hash-link" aria-label="Lien direct vers Bug Fixes" title="Lien direct vers Bug Fixes">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="bug-fixes">Bug Fixes<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-11#bug-fixes" class="hash-link" aria-label="Direct link to Bug Fixes" title="Direct link to Bug Fixes">​</a></h3>
 <p><img decoding="async" loading="lazy" src="https://user-images.githubusercontent.com/737888/218818072-92616039-c135-4c6c-86f0-02195bddffcd.png" alt="UdonBehaviour Inspector With Warning" class="img_ev3q"></p>
 <ul>
 <li>The Unity Inspector for UdonBehaviours will now detect missing <code>VRCUrlInputField</code> variables and offer to reload the SDK in case this component did not load correctly. Closes <a href="https://feedback.vrchat.com/sdk-bug-reports/p/vrc-url-input-field-component-missing-from-project-randomly" target="_blank" rel="noopener noreferrer">this Canny</a>. (This is a known issue, will be fixed when we can upgrade to Unity 2020 or newer.)</li>
@@ -559,14 +565,14 @@ The UdonManager will have parts that are part of the Public SDK API, but changes
 <li>Fixes issue where Unity gets stuck infinitely reloading assemblies.</li>
 <li>Clamps the number of clients you can Build &amp; Test from the SDK Window to a minimum of 0 and a maximum of 8.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="other-changes">Other Changes<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-11#other-changes" class="hash-link" aria-label="Lien direct vers Other Changes" title="Lien direct vers Other Changes">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="other-changes">Other Changes<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-11#other-changes" class="hash-link" aria-label="Direct link to Other Changes" title="Direct link to Other Changes">​</a></h3>
 <ul>
 <li>Adds <code>MidiPlaybackExampleScene.scene</code> and related assets to demonstrate Midi Playback.</li>
 <li>Adds a simple Remote Image Loader to the <code>UdonExampleScene.scene</code>.</li>
 <li>Speeds up loading of Udon Programs.</li>
 <li>Removes old SDK updater window.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="known-issues">Known Issues<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-11#known-issues" class="hash-link" aria-label="Lien direct vers Known Issues" title="Lien direct vers Known Issues">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="known-issues">Known Issues<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-11#known-issues" class="hash-link" aria-label="Direct link to Known Issues" title="Direct link to Known Issues">​</a></h3>
 <ul>
 <li>If you change the midi track in a Midi Player while the visualizer is open, the visualizer doesn’t update to the new track until it is closed and then reopened.</li>
 </ul>]]></content>
@@ -577,14 +583,14 @@ The UdonManager will have parts that are part of the Public SDK API, but changes
         <category label="release" term="release"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Version 3.1.9]]></title>
+        <title type="html"><![CDATA[Release 3.1.9]]></title>
         <id>https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-10</id>
         <link href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-10"/>
         <updated>2022-10-18T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Résumé]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="résumé">Résumé<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-10#r%C3%A9sum%C3%A9" class="hash-link" aria-label="Lien direct vers Résumé" title="Lien direct vers Résumé">​</a></h3>
+        <summary type="html"><![CDATA[Summary]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="summary">Summary<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-10#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h3>
 <p>Major Updates to Udon Graph Usability.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="udon-graph-updates">Udon Graph Updates<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-10#udon-graph-updates" class="hash-link" aria-label="Lien direct vers Udon Graph Updates" title="Lien direct vers Udon Graph Updates">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="udon-graph-updates">Udon Graph Updates<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-10#udon-graph-updates" class="hash-link" aria-label="Direct link to Udon Graph Updates" title="Direct link to Udon Graph Updates">​</a></h3>
 <ul>
 <li>Udon Node Graph: Added lots of hotkeys!<!-- -->
 <ul>
@@ -633,7 +639,7 @@ The UdonManager will have parts that are part of the Public SDK API, but changes
 </ul>
 </li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="changements">Changements<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-10#changements" class="hash-link" aria-label="Lien direct vers Changements" title="Lien direct vers Changements">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="changes">Changes<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-10#changes" class="hash-link" aria-label="Direct link to Changes" title="Direct link to Changes">​</a></h3>
 <ul>
 <li>Changes video link in UdonSyncPlayer example to point to new location</li>
 </ul>]]></content>
@@ -644,56 +650,56 @@ The UdonManager will have parts that are part of the Public SDK API, but changes
         <category label="release" term="release"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Version 3.1.8]]></title>
+        <title type="html"><![CDATA[Release 3.1.8]]></title>
         <id>https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-8</id>
         <link href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-8"/>
         <updated>2022-09-18T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Résumé]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="résumé">Résumé<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-8#r%C3%A9sum%C3%A9" class="hash-link" aria-label="Lien direct vers Résumé" title="Lien direct vers Résumé">​</a></h3>
-<p>Ajoute de nouveaux Shader Globals et méthodes VRCGraphics</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="changements">Changements<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-8#changements" class="hash-link" aria-label="Lien direct vers Changements" title="Lien direct vers Changements">​</a></h3>
-<p>Ajout de 3 Shader Globals accessibles par n'importe quel shader d'avatar ou de monde&nbsp;:</p>
+        <summary type="html"><![CDATA[Summary]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="summary">Summary<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-8#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h3>
+<p>Adds New Shader GLobals and VRCGraphics Methods</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="changes">Changes<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-8#changes" class="hash-link" aria-label="Direct link to Changes" title="Direct link to Changes">​</a></h3>
+<p>Added 3 shader globals that can be accessed by any avatar or world shader:</p>
 <ul>
 <li>
-<p>float _VRChatCameraMode&nbsp;:</p>
+<p>float _VRChatCameraMode:</p>
 <ul>
-<li>0 - Rendu normal</li>
-<li>1 - Rendu dans une caméra portative VR</li>
-<li>2 - Rendu dans une caméra portative de bureau</li>
-<li>3 - Rendu pour une capture d'écran</li>
+<li>0 - Rendering normally</li>
+<li>1 - Rendering in VR handheld camera</li>
+<li>2 - Rendering in Desktop handheld camera</li>
+<li>3 - Rendering for a screenshot</li>
 </ul>
 </li>
 <li>
-<p>float _VRChatMirrorMode&nbsp;:</p>
+<p>float _VRChatMirrorMode:</p>
 <ul>
-<li>0 - Rendu normalement, pas dans un miroir</li>
-<li>1 - Rendu dans un miroir vu en VR</li>
-<li>2 - Rendu dans un miroir vu en mode bureau</li>
+<li>0 - Rendering normally, not in a mirror</li>
+<li>1 - Rendering in a mirror viewed in VR</li>
+<li>2 - Rendering in a mirror viewed in desktop mode</li>
 </ul>
 </li>
 <li>
-<p>float3 _VRChatMirrorCameraPos - Position dans l'espace mondial de la caméra du miroir (indépendante des yeux, "centrée" en VR)</p>
+<p>float3 _VRChatMirrorCameraPos - World space position of mirror camera (eye independent, "centered" in VR)</p>
 </li>
 <li>
-<p>Les champs d'entrée World s'ouvriront désormais avec le clavier modal lorsqu'ils sont interagis. Si ce comportement n'est pas souhaité, ajoutez le composant nouvellement créé <code>VRCInputFieldKeyboardOverride</code> pour spécifier comment remplacer ce comportement. Définir son paramètre sur <code>Default</code> ouvrira le modal tactile tandis que <code>Override</code> ne l'ouvrira pas.</p>
+<p>World InputFields will now open the keyboard modal when interacted with. If this behavior is not desired, add the newly created <code>VRCInputFieldKeyboardOverride</code> component to specify how to override this behavior.  Setting its setting to <code>Default</code> will open the touch modal while <code>Override</code> will not.</p>
 </li>
 <li>
-<p>Nouvelle option <code>cameraClearFlags</code> sur VRCMirrorReflection qui remplace les indicateurs de suppression de caméra utilisés dans le miroir</p>
+<p>New option <code>cameraClearFlags</code> on VRCMirrorReflection that overrides the camera clear flags used in the mirror</p>
 <ul>
-<li>La valeur par défaut est <code>MirrorClearFlags.FromReferenceCamera</code> qui conserve le comportement actuel du rendu identique à la caméra active</li>
+<li>The default is <code>MirrorClearFlags.FromReferenceCamera</code> which retains the current behaviour of rendering the same as the active camera</li>
 </ul>
 </li>
 <li>
-<p>Les options <code>customSkybox</code> et <code>customClearColor</code> permettent des couleurs et des ciels spécifiques au miroir</p>
+<p>Options <code>customSkybox</code> and <code>customClearColor</code> allow mirror-specific skyboxes and clear colors</p>
 </li>
 <li>
-<p>Vous pouvez maintenant définir la gravité dans un monde à 0 ou à des valeurs négatives</p>
+<p>You can now set gravity in a world to 0 or negative values</p>
 </li>
 <li>
-<p>Correction&nbsp;: les masques fournis par l'utilisateur sur la couche FX étaient ignorés et empêchaient les animations de transformation des gestes de fonctionner. <a href="https://docs.vrchat.com/docs/playable-layers#fx" target="_blank" rel="noopener noreferrer">Docs mises à jour</a>.</p>
+<p>Fixed: user-supplied masks on the FX layer were ignored, and prevented Gesture transform animations from working. <a href="https://docs.vrchat.com/docs/playable-layers#fx" target="_blank" rel="noopener noreferrer">Docs updated</a>.</p>
 </li>
 <li>
-<p>Ajout de plusieurs nouveaux nœuds Udon liés à la manipulation des graphiques et des shaders&nbsp;:</p>
+<p>Added several new Udon nodes related to graphics and shader manipulation:</p>
 <ul>
 <li>VRCGraphics.DrawMeshInstanced</li>
 <li>VRCShader.SetGlobalFloat</li>
@@ -708,9 +714,9 @@ The UdonManager will have parts that are part of the Public SDK API, but changes
 </ul>
 </li>
 <li>
-<p>Les fonctions VRCShader acceptent une entrée de type chaîne dans certains cas (pour les noms de texture, principalement). Vous devez utiliser le préfixe _Udon pour ces entrées</p>
+<p>VRCShader functions accept string input in some cases (for texture names, mostly). You must use the _Udon prefix for these inputs</p>
 <ul>
-<li>Il y a une exception. Les fonctions VRCShader accepteront également la chaîne exacte _AudioTexture pour accommoder le système AudioLink déjà largement utilisé par la communauté.</li>
+<li>There is one exception. VRCShader functions will also accept the exact string _AudioTexture to accommodate for the existing widespread community-created AudioLink system</li>
 </ul>
 </li>
 </ul>]]></content>
@@ -721,17 +727,17 @@ The UdonManager will have parts that are part of the Public SDK API, but changes
         <category label="release" term="release"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Version 3.1.7]]></title>
+        <title type="html"><![CDATA[Release 3.1.7]]></title>
         <id>https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-7</id>
         <link href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-7"/>
         <updated>2022-08-18T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Résumé]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="résumé">Résumé<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-7#r%C3%A9sum%C3%A9" class="hash-link" aria-label="Lien direct vers Résumé" title="Lien direct vers Résumé">​</a></h3>
-<p>Quelques petites modifications.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="changements">Changements<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-7#changements" class="hash-link" aria-label="Lien direct vers Changements" title="Lien direct vers Changements">​</a></h3>
+        <summary type="html"><![CDATA[Summary]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="summary">Summary<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-7#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h3>
+<p>A few small changes.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="changes">Changes<a href="https://fairplexvr.github.io/creator-docs-i18n/releases/release-3-1-7#changes" class="hash-link" aria-label="Direct link to Changes" title="Direct link to Changes">​</a></h3>
 <ul>
-<li>Vérifie le Scene Descriptor pour des créations d'object null avant de récupérer la longueur, réparant un problème lors d'un ajout manuel du Scene Descriptor dans votre monde.</li>
-<li>Demande à l'utilisateur de sauvegarder leur scène avant de charger un exemple de scène, réparant le problème dans ce <a href="https://feedback.vrchat.com/sdk-bug-reports/p/switching-to-the-example-scene-deletes-unsaved-changes" target="_blank" rel="noopener noreferrer">Canny</a>.</li>
+<li>Checks Scene Descriptor for null spawns object before trying to get length, fixing issue when adding a Scene Descriptor to your world manually.</li>
+<li>Prompts user to save their scene before loading a Sample Scene, fixing [this Canny issue](<a href="https://feedback.vrchat.com/sdk-bug-reports/p/switching-to-the-example-scene-deletes-unsaved-changes" target="_blank" rel="noopener noreferrer">https://feedback.vrchat.com/sdk-bug-reports/p/switching-to-the-example-scene-deletes-unsaved-changes</a>.</li>
 </ul>]]></content>
         <author>
             <name>Momo the Monster</name>
